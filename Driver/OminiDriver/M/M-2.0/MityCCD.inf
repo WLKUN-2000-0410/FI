@@ -1,0 +1,246 @@
+
+; Copyright (c) Critical Link LLC. All rights reserved.
+
+[Version]
+Signature="$Windows NT$"
+DriverVer=03/30/2010,1.08.03.0
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%PROVIDER%
+CatalogFile=MityCCD.cat
+
+;+
+; Identify the installation media
+;-
+[SourceDisksNames]
+1=%INSTALL_NAME%,,,
+
+;+
+; Identify the files on the installation media
+;-
+; Windows 32
+[SourceDisksFiles.x86]
+MityCCD.spt = 1
+CyUsb_wxp_x86.SYS = 1
+CyUsb_wlh_x86.SYS = 1
+;CyUsb_wxp_x86_legacy.SYS = 1
+;CyUsb_wxp_x86_legacy_loader.SYS = 1
+%Load.SCRIPTFILE% = 1
+
+; Windows 64
+[SourceDisksFiles.amd64]
+MityCCD.spt = 1
+CyUsb_wxp_x64.SYS = 1
+CyUsb_wlh_x64.SYS = 1
+%Load.SCRIPTFILE% = 1
+
+;+
+; Identify where the files will be copied to
+;-
+[DestinationDirs]
+CyUsb.Files.NTX86.5.1     = 12
+CyUsb.Files.NTX86.6.0     = 12
+CyUsb.Files.NTAMD64.5.1   = 12
+CyUsb.Files.NTAMD64.6.0   = 12
+CyLoad.Files.NTX86.5.1     = 12
+CyLoad.Files.NTX86.6.0     = 12
+CyLoad.Files.NTAMD64.5.1   = 12
+CyLoad.Files.NTAMD64.6.0   = 12
+CyLoadFW.Files        = 11,CCDSP2Load
+;+
+; The root of the hierarchy for this file
+; we only support XP, VISTA, and Windows 7
+;-
+[Manufacturer]
+%MfgName%=MityDSP_USB,NTx86.5.1,NTamd64.5.1,NTx86.6.0,NTamd64.6.0
+
+[MityDSP_USB.NTX86.5.1]
+%LoadDesc%=CyLoad.NTX86.5.1, USB\VID_1EF8&PID_1004
+%DeviceDesc%=CyUsb.NTX86.5.1, USB\VID_1EF8&PID_1005
+%DeviceDesc%=CyUsb.NTX86.5.1, USB\VID_04B4&PID_8613
+
+[MityDSP_USB.NTAMD64.5.1]
+%LoadDesc%=CyLoad.NTAMD64.5.1, USB\VID_1EF8&PID_1004
+%DeviceDesc%=CyUsb.NTAMD64.5.1, USB\VID_1EF8&PID_1005
+%DeviceDesc%=CyUsb.NTAMD64.5.1, USB\VID_04B4&PID_8613
+
+[MityDSP_USB.NTX86.6.0]
+%LoadDesc%=CyLoad.NTX86.6.0, USB\VID_1EF8&PID_1004
+%DeviceDesc%=CyUsb.NTX86.6.0, USB\VID_1EF8&PID_1005
+%DeviceDesc%=CyUsb.NTX86.6.0, USB\VID_04B4&PID_8613
+
+[MityDSP_USB.NTAMD64.6.0]
+%LoadDesc%=CyLoad.NTAMD64.6.0, USB\VID_1EF8&PID_1004
+%DeviceDesc%=CyUsb.NTAMD64.6.0, USB\VID_1EF8&PID_1005
+%DeviceDesc%=CyUsb.NTAMD64.6.0, USB\VID_04B4&PID_8613
+
+;==============================================
+
+[CyLoad.Files.ntx86.5.1]
+CyLoad.SYS, CyUsb_wxp_x86.SYS
+
+[CyLoad.Files.ntamd64.5.1]
+CyLoad.SYS, CyUsb_wxp_x64.SYS
+
+[CyLoad.Files.ntx86.6.0]
+CyLoad.SYS, CyUsb_wlh_x86.SYS
+
+[CyLoad.Files.ntamd64.6.0]
+CyLoad.SYS, CyUsb_wlh_x64.SYS
+
+[CyLoadFW.Files]
+%Load.SCRIPTFILE%
+
+[CyLoad.NTX86.5.1]
+CopyFiles=CyLoad.Files.NTX86.5.1, CyLoadFW.Files
+AddReg=CyLoad.AddReg
+
+[CyLoad.NTX86.5.1.HW]
+AddReg=CyLoad.AddReg.Guid
+
+[CyLoad.NTX86.5.1.Services]
+Addservice = CyLoad, 0x00000002, CyLoad.AddService
+
+[CyLoad.NTX86.6.0]
+CopyFiles=CyLoad.Files.NTX86.6.0, CyLoadFW.Files
+AddReg=CyLoad.AddReg
+
+[CyLoad.NTX86.6.0.HW]
+AddReg=CyLoad.AddReg.Guid
+
+[CyLoad.NTX86.6.0.Services]
+Addservice = CyLoad, 0x00000002, CyLoad.AddService
+
+[CyLoad.NTAMD64.5.1]
+CopyFiles=CyLoad.Files.NTAMD64.5.1, CyLoadFW.Files
+AddReg=CyLoad.AddReg
+
+[CyLoad.NTAMD64.5.1.HW]
+AddReg=CyLoad.AddReg.Guid
+
+[CyLoad.NTAMD64.5.1.Services]
+Addservice = CyLoad, 0x00000002, CyLoad.AddService
+
+[CyLoad.NTAMD64.6.0]
+CopyFiles=CyLoad.Files.NTAMD64.6.0, CyLoadFW.Files
+AddReg=CyLoad.AddReg
+
+[CyLoad.NTAMD64.6.0.HW]
+AddReg=CyLoad.AddReg.Guid
+
+[CyLoad.NTAMD64.6.0.Services]
+Addservice = CyLoad, 0x00000002, CyLoad.AddService
+
+[CyLoad.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,CyLoad.sys
+HKR,,DriverBase,,CyLoad.sys
+;HKR,"Parameters","MaximumTransferSize",0x10001,4096
+HKR,"Parameters","DebugLevel",0x10001,2
+HKR,,FriendlyName,,%Load.SvcDesc%
+
+[CyLoad.AddReg.Guid]
+HKR,,DriverGUID,,%Load.GUID%
+HKR,,DriverEXECSCRIPT,,%Load.SCRIPTDIR%%Load.SCRIPTFILE%
+
+[CyLoad.AddService]
+DisplayName    = %Load.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\CyLoad.sys
+LoadOrderGroup = Base
+
+;==============================================
+
+[CyUsb.Files.ntx86.5.1]
+CyUsb.SYS, CyUsb_wxp_x86.SYS
+
+[CyUsb.Files.ntamd64.5.1]
+CyUsb.SYS, CyUsb_wxp_x64.SYS
+
+[CyUsb.Files.ntx86.6.0]
+CyUsb.SYS, CyUsb_wlh_x86.SYS
+
+[CyUsb.Files.ntamd64.6.0]
+CyUsb.SYS, CyUsb_wlh_x64.SYS
+
+[CyUsb.NTX86.5.1]
+CopyFiles=CyUsb.Files.ntx86.5.1
+AddReg=CyUsb.AddReg
+
+[CyUsb.NTX86.5.1.HW]
+AddReg=CyUsb.AddReg.Guid
+
+[CyUsb.NTX86.5.1.Services]
+Addservice = CyUsb, 0x00000002, CyUsb.AddService
+
+[CyUsb.NTX86.6.0]
+CopyFiles=CyUsb.Files.ntx86.6.0
+AddReg=CyUsb.AddReg
+
+[CyUsb.NTX86.6.0.HW]
+AddReg=CyUsb.AddReg.Guid
+
+[CyUsb.NTX86.6.0.Services]
+Addservice = CyUsb, 0x00000002, CyUsb.AddService
+
+[CyUsb.NTAMD64.5.1]
+CopyFiles=CyUsb.Files.ntamd64.5.1
+AddReg=CyUsb.AddReg
+
+[CyUsb.NTAMD64.5.1.HW]
+AddReg=CyUsb.AddReg.Guid
+
+[CyUsb.NTAMD64.5.1.Services]
+Addservice = CyUsb, 0x00000002, CyUsb.AddService
+
+[CyUsb.NTAMD64.6.0]
+CopyFiles=CyUsb.Files.ntamd64.6.0
+AddReg=CyUsb.AddReg
+
+[CyUsb.NTAMD64.6.0.HW]
+AddReg=CyUsb.AddReg.Guid
+
+[CyUsb.NTAMD64.6.0.Services]
+Addservice = CyUsb, 0x00000002, CyUsb.AddService
+
+[CyUsb.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,CyUsb.sys
+HKR,,DriverBase,,CYUSB.sys
+;HKR,"Parameters","MaximumTransferSize",0x10001,4096
+HKR,"Parameters","DebugLevel",0x10001,2
+HKR,,FriendlyName,,%CyUsb.SvcDesc%
+
+[CyUsb.AddReg.Guid]
+;HKR,,DriverGUID,,%CyUsb.GUID%
+
+;================================================
+
+[CyUsb.AddService]
+DisplayName    = %CyUsb.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\CyUsb.sys
+AddReg         = CyUsb.AddReg
+LoadOrderGroup = Base
+
+;+
+; String substitution definitions
+;-
+[Strings]
+PROVIDER                     = "Critical Link LLC"
+Company                      = "Critical Link LLC"
+MfgName                      = "Critical Link LLC"
+LoadDesc                     = "Scientific Camera Loader"
+DeviceDesc                   = "Scientific Camera Driver"
+Load.GUID                    = "{266cd830-4c47-11de-a79c-001d09815ae9}"
+Load.SCRIPTDIR               = "\systemroot\system32\CCDSP2Load\"
+Load.SCRIPTFILE              = "MityCCD.spt"
+INSTALL_NAME                 = "MityCCD Install Disk"
+Load.SvcDesc                 = "Scientific Camera USB Loader"
+CyUsb.GUID                   = "{AE18AA60-7F6A-11d4-97DD-00010229B959}"
+CyUsb.SvcDesc                = "Scientific Camera USB Driver"
+    

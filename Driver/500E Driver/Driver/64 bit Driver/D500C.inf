@@ -1,0 +1,204 @@
+[Version]
+Signature="$CHICAGO$"
+Class=Image
+ClassGuid = {6bdd1fc6-810f-11d0-bec7-08002be2092f}
+provider=%GR%
+DriverVer =05/01/2011,2.0.0.2
+LayoutFile=layout.inf
+
+
+[Manufacturer]
+%GR%=GR, NTx86, NTamd64
+
+[GR.NTx86]
+%USB\VID_0547&PID_4D35.DeviceDesc%=D500C.Dev, USB\VID_0547&PID_4D35
+
+[GR.NTamd64]
+%USB\VID_0547&PID_4D35.DeviceDesc%=D500C64.Dev, USB\VID_0547&PID_4D35
+
+[DestinationDirs]
+DefaultDestDir=11
+;10 is the windows directory
+;11 is the systems directory
+D500C.Files.Ext      = 10,System32\Drivers
+D500C64.Files.Ext    = 10,System32\Drivers
+D500C.Files.Sys32    = 10,System32
+D500C.Files.TWain_32 = 10,TWain_32
+D500C64.Files.Sys64  = 10,SysWOW64
+
+[SourceDisksNames]
+1 = %D500C.SvcDesc%
+1 = %D500C64.SvcDesc%
+
+[SourceDisksFiles]
+D500C.sys = 1
+D500C64.sys = 1
+D500C.ax = 1
+D500C.ds = 1
+
+
+[D500C.Dev]
+DelFiles  = D500C.Files.Ext, D500C.Files.TWain_32,D500C.Files.Sys32
+CopyFiles = D500C.Files.Ext, D500C.Files.TWain_32,D500C.Files.Sys32
+DelReg=D500C.DelReg
+AddReg=D500C.AddReg
+
+[D500C.Dev.NT]
+DelFiles  = D500C.Files.Ext, D500C.Files.TWain_32,D500C.Files.Sys32
+CopyFiles = D500C.Files.Ext, D500C.Files.TWain_32,D500C.Files.Sys32
+DelReg=D500C.DelReg
+AddReg=D500C.AddReg
+
+[D500C64.Dev]
+DelFiles  = D500C64.Files.Ext,D500C64.Files.Sys64,D500C.Files.TWain_32
+CopyFiles = D500C64.Files.Ext,D500C64.Files.Sys64,D500C.Files.TWain_32
+DelReg=D500C64.DelReg
+AddReg=D500C64.AddReg
+
+[D500C64.Dev.NT]
+DelFiles  = D500C64.Files.Ext,D500C64.Files.Sys64,D500C.Files.TWain_32
+CopyFiles = D500C64.Files.Ext,D500C64.Files.Sys64,D500C.Files.TWain_32
+DelReg=D500C64.DelReg
+AddReg=D500C64.AddReg
+
+[D500C.Dev.NT.Services]
+Addservice = D500C, 0x00000002, D500C.AddService
+
+[D500C64.Dev.NT.Services]
+Addservice = D500C, 0x00000002, D500C64.AddService
+
+[D500C.AddService]
+DisplayName    = %D500C.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\D500C.sys
+LoadOrderGroup = Base
+
+[D500C64.AddService]
+DisplayName    = %D500C64.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\D500C64.sys
+LoadOrderGroup = Base
+
+[D500C.Files.Ext]
+D500C.sys
+
+[D500C64.Files.Ext]
+D500C64.sys
+
+[D500C.Files.Sys32]
+D500C.ax
+
+
+[D500C.Files.TWain_32]
+D500C.ds
+
+[D500C64.Files.Sys64]
+D500C.ax
+
+[D500C.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,D500C.sys
+HKR,,CLSID,,%D500C.CAMERAGUID%
+HKR,,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+
+;CAMERAGUID
+HKCR,CLSID\%D500C.CAMERAGUID%,,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,CLSID\%D500C.CAMERAGUID%\InprocServer32,,,D500C.ax
+HKCR,CLSID\%D500C.CAMERAGUID%\InprocServer32,ThreadingModel,,Both
+
+;SETUPGUID
+HKCR,CLSID\%D500C.SETUPGUID%,,,%D500C.Setup%
+HKCR,CLSID\%D500C.SETUPGUID%\InprocServer32,,,D500C.ax
+HKCR,CLSID\%D500C.SETUPGUID%\InprocServer32,ThreadingModel,,Both
+
+;SIZEGUID
+HKCR,CLSID\%D500C.SIZEGUID%,,,%D500C.Size%"
+HKCR,CLSID\%D500C.SIZEGUID%\InprocServer32,,,D500C.ax
+HKCR,CLSID\%D500C.SIZEGUID%\InprocServer32,ThreadingModel,,Both
+
+;Associate the property set with the property page
+HKCR,CLSID\%D500C.VideoFilter%\Instance\%D500C.CAMERAGUID%,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,CLSID\%D500C.VideoFilter%\Instance\%D500C.CAMERAGUID%,CLSID,,%D500C.CAMERAGUID%
+HKCR,CLSID\%D500C.VideoFilter%\Instance\%D500C.CAMERAGUID%,FilterData,01,\
+02,00,00,00,00,00,20,00,01,00,00,00,00,00,00,00,30,70,69,33,\
+08,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,00,00,00,00,30,74,79,33,00,\
+00,00,00,38,00,00,00,48,00,00,00,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,\
+9b,71,7d,eb,36,e4,4f,52,ce,11,9f,53,00,20,af,0b,a7,70
+
+HKCR,CLSID\%D500C.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,CLSID\%D500C.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,CLSID,,%D500C.CAMERAGUID%
+HKCR,CLSID\%D500C.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,FilterData,01,\
+02,00,00,00,00,00,20,00,01,00,00,00,00,00,00,00,30,70,69,33,\
+08,00,00,00,01,00,00,00,01,00,00,00,00,00,00,00,38,00,00,00,30,74,79,33,00,\
+00,00,00,48,00,00,00,58,00,00,00,81,42,6c,fb,53,03,d1,11,90,5f,00,00,c0,cc,\
+16,ba,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,7d,eb,36,e4,4f,52,ce,\
+11,9f,53,00,20,af,0b,a7,70
+
+[D500C64.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,D500C64.sys
+HKR,,CLSID,,%D500C.CAMERAGUID%
+HKR,,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+
+;CAMERAGUID
+HKCR,WOW6432Node\CLSID\%D500C.CAMERAGUID%,,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,WOW6432Node\CLSID\%D500C.CAMERAGUID%\InprocServer32,,,D500C.ax
+HKCR,WOW6432Node\CLSID\%D500C.CAMERAGUID%\InprocServer32,ThreadingModel,,Both
+
+;SETUPGUID
+HKCR,WOW6432Node\CLSID\%D500C.SETUPGUID%,,,%D500C.Setup%
+HKCR,WOW6432Node\CLSID\%D500C.SETUPGUID%\InprocServer32,,,D500C.ax
+HKCR,WOW6432Node\CLSID\%D500C.SETUPGUID%\InprocServer32,ThreadingModel,,Both
+
+;SIZEGUID
+HKCR,WOW6432Node\CLSID\%D500C.SIZEGUID%,,,%D500C.Size%"
+HKCR,WOW6432Node\CLSID\%D500C.SIZEGUID%\InprocServer32,,,D500C.ax
+HKCR,WOW6432Node\CLSID\%D500C.SIZEGUID%\InprocServer32,ThreadingModel,,Both
+
+;Associate the property set with the property page
+HKCR,WOW6432Node\CLSID\%D500C.VideoFilter%\Instance\%D500C.CAMERAGUID%,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,WOW6432Node\CLSID\%D500C.VideoFilter%\Instance\%D500C.CAMERAGUID%,CLSID,,%D500C.CAMERAGUID%
+HKCR,WOW6432Node\CLSID\%D500C.VideoFilter%\Instance\%D500C.CAMERAGUID%,FilterData,01,\
+02,00,00,00,00,00,20,00,01,00,00,00,00,00,00,00,30,70,69,33,\
+08,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,00,00,00,00,30,74,79,33,00,\
+00,00,00,38,00,00,00,48,00,00,00,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,\
+9b,71,7d,eb,36,e4,4f,52,ce,11,9f,53,00,20,af,0b,a7,70
+
+HKCR,WOW6432Node\CLSID\%D500C.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,WOW6432Node\CLSID\%D500C.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,CLSID,,%D500C.CAMERAGUID%
+HKCR,WOW6432Node\CLSID\%D500C.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,FilterData,01,\
+02,00,00,00,00,00,20,00,01,00,00,00,00,00,00,00,30,70,69,33,\
+08,00,00,00,01,00,00,00,01,00,00,00,00,00,00,00,38,00,00,00,30,74,79,33,00,\
+00,00,00,48,00,00,00,58,00,00,00,81,42,6c,fb,53,03,d1,11,90,5f,00,00,c0,cc,\
+16,ba,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,7d,eb,36,e4,4f,52,ce,\
+11,9f,53,00,20,af,0b,a7,70
+
+[D500C.DelReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,D500C.sys
+
+[D500C64.DelReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,D500C64.sys
+
+
+[Strings]
+GR                          = "ShenZhen SunTime  Technology Co.,Ltd."
+USB\VID_0547&PID_4D35.DeviceDesc = "SunTime 500E"
+D500C.SvcDesc                 = "SunTime 500E"
+D500C64.SvcDesc               = "SunTime 500E"
+
+D500C.VideoFilter		 = "{083863F1-70DE-11d0-BD40-00A0C911CE86}"
+D500C.CaptureFilter            = "{860BB310-5D01-11d0-BD3B-00A0C911CE86}"
+
+D500C.CAMERAGUID 	   	 = "{9E5CC773-DEEF-4b58-B1F0-C969CA06C95D}"
+D500C.SETUPGUID                = "{6EAD0D65-1039-40f2-850B-2293EAA91D18}"
+D500C.SIZEGUID                 = "{9B2CE39A-5927-47fd-8806-D4E76DD96D0F}"
+
+D500C.Setup    		 = "D500C SetupPage"
+D500C.Size 	   		 = "D500C SizePage"
+

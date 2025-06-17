@@ -1,0 +1,2833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Adv">
+      <UniqueIdentifier>{fde03a5a-1561-4f5d-8f18-9633cab6608d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tee">
+      <UniqueIdentifier>{5dc30b3d-7552-4667-989e-6049c555935d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{ee01f360-bb75-4e11-a18b-93808892c2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{d1f4bb5f-9d57-4743-b7a7-ee2388963a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\print">
+      <UniqueIdentifier>{f462e803-27e4-477e-8162-4b5c75323523}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\sql">
+      <UniqueIdentifier>{f9a846d1-2fe0-4f42-8f7b-99e887dd2938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File\sql\matlab">
+      <UniqueIdentifier>{f0d9f28a-071c-4cb5-84f5-26041f9ecccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LED">
+      <UniqueIdentifier>{1ee374de-eef3-4c2f-bdc5-011ce3e6d7c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="new">
+      <UniqueIdentifier>{9ec7edb6-57f6-4b30-9d87-fb1912a7e72f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Prior">
+      <UniqueIdentifier>{019caa2a-bd7a-44c5-aaaa-d2af923cffd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\INScanLite.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\INScan-Lite.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\img3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\green.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gray.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ch.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\eh.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\tw.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\login.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\78.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\INScan-Lite\INScan-Lite\res\eh.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\INScan-JC.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\img4.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap12.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\INScan.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\login2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="mult\analyseMixture_ref.rsp">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="mult\buildInfo.mat">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="mult\codedescriptor.dmr">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="mult\codeInfo.mat">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="mult\gcGuiReport.mat">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="mult\make_exception.mat">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="mult\rtw_proj.tmw">
+      <Filter>File\sql\matlab</Filter>
+    </None>
+    <None Include="res\SX.png">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bitmap13.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\INscan.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\INScan-Lite2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="INScan-Lite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="INScan-LiteDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgShow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDataCom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDataPro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zlanguagectrl1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLogin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PCOMM.H">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAdv.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAbout.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSet.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLaCorr.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLanguage.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="BxsOffset.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTest.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTestCheckJ.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTestCheckK.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPassWord.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrint.h">
+      <Filter>File\print</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintFrame.h">
+      <Filter>File\print</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintView.h">
+      <Filter>File\print</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgNihe.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="zolixcurveprocesctrl1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoMarkValue.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="dbado\DBAdo.h">
+      <Filter>File\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="dbado\base_64.h">
+      <Filter>File\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWait.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptureVideo.h">
+      <Filter>LED</Filter>
+    </ClInclude>
+    <ClInclude Include="MiniCamera.h">
+      <Filter>LED</Filter>
+    </ClInclude>
+    <ClInclude Include="dbado\DataCompareLast.h">
+      <Filter>File\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgTestCheckIN.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="FileInfo.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="DenoiseDlg.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="FitSmoothDlg.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="SoomthDlg.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="CutOutLineDlg.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\adxfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\alligatorfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\amountfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\animationlist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\annotationcallout.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\annotationtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\antialiastool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\areaseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\arrowseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\aspect.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\averagefunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axes.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axis.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axisarrowtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axisbreak.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axisbreaks.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axisbreakstool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axisgridpen.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axislabels.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axislabelsitem.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axisscrolltool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\axistitle.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\backimage.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bannertool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bar3dseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\barjoinseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\barseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bevelfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bezierseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\blurfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bmpexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bollingerfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\boxplotseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\brightnessfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\brush.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bubble3dseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\bubbleseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\calendarcell.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\calendarcellupper.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\calendarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\candleseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\canvas.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\ccifunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartanimations.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartaxispen.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartcollection.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\charteditorpanel.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartfont.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartgrid.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartgridcols.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartgridnavigator.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartgridrows.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\charthiddenpen.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartimagetool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\chartpagenavigator.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\circlelabels.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\circularframe.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\circulargauge.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\clipseriestool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\clockseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\clvfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\colorbandtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\colorfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\colorgridseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\colorlinetool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\compressfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\contourlevel.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\contourlevels.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\contourmarks.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\contourseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\contrastfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\cropfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\crosstabsource.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\cursortool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\curvefittingfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\custom3dpaletteseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\customfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\customserieslist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\darvasseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\datatabletool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\deltapointseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\donutseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\downsamplingfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\dragmarkstool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\dragpointtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\drawline.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\drawlinelist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\drawlinetool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\embossfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\environment.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\epsexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\errorbarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\errorseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\expandanimation.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\expavgfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\explodedslices.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\expmovavgfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\export.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\extralegendtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\fadertool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\fastlineseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\fibonacciitem.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\fibonaccilevels.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\fibonaccitool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\filteritems.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\filterregion.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\flexexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\floatxyz.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\framebrush.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\framedborder.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\frametool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\fullscreentool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\funnelseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gammacorrectionfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\ganttseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gantttool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gaugehand.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gaugepointerrange.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gaugeseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gaugeseriespointer.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gifexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gllightsource.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\glposition.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gradient.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\grayscalefilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gridbandbrush.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gridbandtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\gridtransposetool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\highlowlineseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\highlowseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\histogramfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\histogramseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\horizareaseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\horizbarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\horizboxplotseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\horizhistogramseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\horizlineseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\htmlexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\huelumsatfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\imagebarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\imagepointseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\import.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\isosurfaceseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\jpegexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\kagiseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\knobgauge.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legend.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legenditem.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legenditems.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legendpalettetool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legendscrollbartool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legendsymbol.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\legendtitle.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\levelsegment.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\lightfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\lighttool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\lineargauge.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\linepointseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\lineseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\linktool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\macdfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\magnifytool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\mappolygon.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\mappolygonlist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\mapseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\margins.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\marks.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\markscallout.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\marksitem.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\markssymbol.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\markstiptool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\medianfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\metafileexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\mirrorfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\modefunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\moneyflowfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\mosaicfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\movingavgfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\nativeexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\nearesttool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\numericgauge.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\numericmarker.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\obvfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\orgitem.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\orgitemcollection.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\orgseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\orgshape.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\page.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pagecontrol.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pagenumtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\panel.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pcxexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pdfexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pen.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\performancefunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\piemarks.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pieotherslice.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pieseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pietool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pngexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\point3dseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pointarray.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pointer.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pointfigureseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pointseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\polarbarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\polargridseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\polarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\printer.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\printersettings.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pvofunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\pyramidseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\radarseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\rectangletool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\renkoseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\resizefilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\rmsfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\roseseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\rotatefilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\rotatetool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\rsifunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\rvifunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\sarfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\scroll.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\scrollbarthumb.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\selectortool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\series.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesanimationtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesbandtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesgroup.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesgroups.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\serieslist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesmarkposition.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesmarkspositions.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesregiontool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesstatstool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriestextfield.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriestextfields.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriestextsource.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\seriesxmlsource.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\shapeseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\sharpenfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\skewnessfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\smithseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\smoothingfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\smoothpoints.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\softenfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\spacing.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\StdAfx.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\stddeviationfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\strings.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\subchart.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\subchartchart.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\subcharttool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\subgradient.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\subsetteefunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\surfacenearesttool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\surfaceseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\surfacesides.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\svgexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\tablelegend.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\tagcloudseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\tchart.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\TeeChartDefines.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teecommander.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teecommanderbutton.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teecustomshape.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeeditor.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeeditoroptions.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeeditorshowpages.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeemboss.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teefilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teefont.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teefunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teegdiplus.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teelistbox.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teelistboxsection.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeopengl.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepanelslist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepanning.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepicture.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepoint2d.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepoint3d.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepreviewer.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeprevieweroptions.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teepreviewpanel.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teerect.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeshadow.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeshape.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\teeshapepanel.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\ternaryseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\text3dtool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\textexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\textshape.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\tilefilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\titles.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\toollist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\tools.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\towerseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\transposeseriestool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\treemapseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\trendfunction.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\trisurfaceseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\valuelist.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\valuelists.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\vector3dseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\videoplayertool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\videotool.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\volumepipeseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\volumeseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\wall.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\walls.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\waterfallseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\windroseseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\worldseries.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\xamlexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\xlsexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\xmlexport.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\zoom.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\file\TeeChart2011\zoomfilter.h">
+      <Filter>Tee</Filter>
+    </ClInclude>
+    <ClInclude Include="SetNameDlg.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveFilesDlg.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\abs.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\all.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_data.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_emxAPI.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_emxutil.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_initialize.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_rtwutil.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_terminate.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analyseMixture_types.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\analysePure.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\any1.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\autoestibl.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\baseline_correct.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\cal_noiselevel.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\cal_snr.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\calkafang.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\circshift.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\colon.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\combineVectorElements.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\conv2.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\cwt1.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\deri2.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\diff.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\eml_setop.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\fastsmooth.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\findpeaks.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\floor.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\geto_new.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\interp1.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\ixamax.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\log.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\MixtureFeatureExtract.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\mldivide.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\mod.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\norm.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\nullAssignment.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\offsetCorrect.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\power.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\PureFeatureExtract.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\qr.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\quickselect.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\resolution.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\resolution_factor.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\rt_nonfinite.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\rtGetInf.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\rtGetNaN.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\rtwtypes.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\selectitem_m.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\selectitem_p.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\sort1.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\sortIdx.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\sortLE.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\sortrows.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\sqrt.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\std.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\sum.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\vmedian.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\vvarstd.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\wkeep1.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xgemv.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xgeqp3.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xger.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xgetrf.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xnrm2.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xscal.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xswap.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\xtrsm.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\zl_fullspectrumcontrast.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\zl_lsqnonneg1.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\tmwtypes.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDataFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteOne.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="SetColor.h">
+      <Filter>new</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAloneParams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RoundButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAutoParams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPriorCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetSampleName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDlgShow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exception.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpencvCameraConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mult\filter_.h">
+      <Filter>File\sql\matlab</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgDccdSet.h">
+      <Filter>Adv</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogQualityAnalyse.h">
+      <Filter>new</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="INScan-Lite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="INScan-LiteDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDataCom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDataPro.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zlanguagectrl1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLogin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAbout.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAdv.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLaCorr.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLanguage.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSet.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="BxsOffset.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTestCheckJ.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTestCheckK.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPassWord.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrint.cpp">
+      <Filter>File\print</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintFrame.cpp">
+      <Filter>File\print</Filter>
+    </ClCompile>
+    <ClCompile Include="PrintView.cpp">
+      <Filter>File\print</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgNihe.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="zolixcurveprocesctrl1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoMarkValue.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="dbado\DBAdo.cpp">
+      <Filter>File\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWait.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptureVideo.cpp">
+      <Filter>LED</Filter>
+    </ClCompile>
+    <ClCompile Include="MiniCamera.cpp">
+      <Filter>LED</Filter>
+    </ClCompile>
+    <ClCompile Include="dbado\DataCompareLast.cpp">
+      <Filter>File\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgTestCheckIN.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="FileInfo.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DenoiseDlg.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="FitSmoothDlg.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="SoomthDlg.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="CutOutLineDlg.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\adxfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\alligatorfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\amountfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\animationlist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\annotationcallout.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\annotationtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\antialiastool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\areaseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\arrowseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\aspect.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\averagefunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axes.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axis.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axisarrowtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axisbreak.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axisbreaks.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axisbreakstool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axisgridpen.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axislabels.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axislabelsitem.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axisscrolltool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\axistitle.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\backimage.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bannertool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bar3dseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\barjoinseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\barseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bevelfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bezierseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\blurfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bmpexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bollingerfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\boxplotseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\brightnessfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\brush.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bubble3dseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\bubbleseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\calendarcell.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\calendarcellupper.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\calendarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\candleseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\canvas.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\ccifunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartanimations.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartaxispen.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartcollection.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\charteditorpanel.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartfont.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartgrid.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartgridcols.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartgridnavigator.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartgridrows.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\charthiddenpen.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartimagetool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\chartpagenavigator.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\circlelabels.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\circularframe.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\circulargauge.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\clipseriestool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\clockseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\clvfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\colorbandtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\colorfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\colorgridseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\colorlinetool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\compressfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\contourlevel.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\contourlevels.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\contourmarks.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\contourseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\contrastfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\cropfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\crosstabsource.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\cursortool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\curvefittingfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\custom3dpaletteseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\customfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\customserieslist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\darvasseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\datatabletool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\deltapointseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\donutseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\downsamplingfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\dragmarkstool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\dragpointtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\drawline.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\drawlinelist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\drawlinetool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\embossfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\environment.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\epsexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\errorbarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\errorseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\expandanimation.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\expavgfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\explodedslices.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\expmovavgfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\export.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\extralegendtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\fadertool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\fastlineseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\fibonacciitem.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\fibonaccilevels.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\fibonaccitool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\filteritems.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\filterregion.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\flexexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\floatxyz.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\framebrush.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\framedborder.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\frametool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\fullscreentool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\funnelseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gammacorrectionfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\ganttseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gantttool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gaugehand.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gaugepointerrange.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gaugeseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gaugeseriespointer.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gifexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gllightsource.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\glposition.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gradient.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\grayscalefilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gridbandbrush.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gridbandtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\gridtransposetool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\highlowlineseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\highlowseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\histogramfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\histogramseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\horizareaseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\horizbarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\horizboxplotseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\horizhistogramseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\horizlineseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\htmlexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\huelumsatfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\imagebarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\imagepointseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\import.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\isosurfaceseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\jpegexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\kagiseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\knobgauge.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legend.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legenditem.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legenditems.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legendpalettetool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legendscrollbartool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legendsymbol.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\legendtitle.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\levelsegment.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\lightfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\lighttool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\lineargauge.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\linepointseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\lineseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\linktool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\macdfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\magnifytool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\mappolygon.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\mappolygonlist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\mapseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\margins.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\marks.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\markscallout.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\marksitem.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\markssymbol.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\markstiptool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\medianfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\metafileexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\mirrorfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\modefunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\moneyflowfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\mosaicfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\movingavgfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\nativeexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\nearesttool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\numericgauge.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\numericmarker.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\obvfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\orgitem.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\orgitemcollection.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\orgseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\orgshape.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\page.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pagecontrol.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pagenumtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\panel.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pcxexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pdfexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pen.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\performancefunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\piemarks.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pieotherslice.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pieseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pietool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pngexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\point3dseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pointarray.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pointer.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pointfigureseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pointseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\polarbarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\polargridseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\polarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\printer.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\printersettings.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pvofunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\pyramidseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\radarseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\rectangletool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\renkoseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\resizefilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\rmsfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\roseseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\rotatefilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\rotatetool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\rsifunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\rvifunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\sarfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\scroll.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\scrollbarthumb.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\selectortool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\series.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesanimationtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesbandtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesgroup.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesgroups.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\serieslist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesmarkposition.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesmarkspositions.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesregiontool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesstatstool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriestextfield.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriestextfields.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriestextsource.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\seriesxmlsource.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\shapeseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\sharpenfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\skewnessfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\smithseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\smoothingfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\smoothpoints.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\softenfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\spacing.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\stddeviationfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\strings.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\subchart.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\subchartchart.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\subcharttool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\subgradient.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\subsetteefunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\surfacenearesttool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\surfaceseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\surfacesides.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\svgexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\tablelegend.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\tagcloudseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\tchart.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teecommander.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teecommanderbutton.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teecustomshape.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeeditor.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeeditoroptions.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeeditorshowpages.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeemboss.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teefilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teefont.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teefunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teegdiplus.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teelistbox.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teelistboxsection.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeopengl.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepanelslist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepanning.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepicture.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepoint2d.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepoint3d.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepreviewer.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeprevieweroptions.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teepreviewpanel.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teerect.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeshadow.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeshape.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\teeshapepanel.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\ternaryseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\text3dtool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\textexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\textshape.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\tilefilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\titles.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\toollist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\tools.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\towerseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\transposeseriestool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\treemapseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\trendfunction.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\trisurfaceseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\valuelist.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\valuelists.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\vector3dseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\videoplayertool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\videotool.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\volumepipeseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\volumeseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\wall.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\walls.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\waterfallseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\windroseseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\worldseries.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\xamlexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\xlsexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\xmlexport.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\zoom.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\file\TeeChart2011\zoomfilter.cpp">
+      <Filter>Tee</Filter>
+    </ClCompile>
+    <ClCompile Include="SetNameDlg.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveFilesDlg.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\abs.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\all.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture_data.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture_emxAPI.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture_emxutil.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture_initialize.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture_rtwutil.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analyseMixture_terminate.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\analysePure.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\any1.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\autoestibl.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\baseline_correct.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\cal_noiselevel.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\cal_snr.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\calkafang.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\circshift.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\colon.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\combineVectorElements.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\conv2.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\cwt1.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\deri2.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\diff.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\eml_setop.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\fastsmooth.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\findpeaks.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\floor.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\geto_new.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\interp1.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\ixamax.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\log.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\MixtureFeatureExtract.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\mldivide.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\mod.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\norm.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\nullAssignment.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\offsetCorrect.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\power.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\PureFeatureExtract.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\qr.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\quickselect.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\resolution.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\resolution_factor.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\rt_nonfinite.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\rtGetInf.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\rtGetNaN.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\selectitem_m.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\selectitem_p.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\sort1.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\sortIdx.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\sortLE.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\sortrows.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\sqrt.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\std.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\sum.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\vmedian.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\vvarstd.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\wkeep1.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xgemv.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xgeqp3.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xger.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xgetrf.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xnrm2.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xscal.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xswap.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\xtrsm.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\zl_fullspectrumcontrast.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\zl_lsqnonneg1.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDataFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetColor.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteOne.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAloneParams.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RoundButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAutoParams.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPriorCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetSampleName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDlgShow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgShow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpencvCameraConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mult\filter_.cpp">
+      <Filter>File\sql\matlab</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgDccdSet.cpp">
+      <Filter>Adv</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogQualityAnalyse.cpp">
+      <Filter>new</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="INScan-Lite.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap14.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap15.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap16.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap17.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\zolixcolore.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

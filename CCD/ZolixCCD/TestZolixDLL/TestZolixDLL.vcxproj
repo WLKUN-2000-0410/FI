@@ -1,0 +1,889 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83766009-4641-4640-8B3A-DEC3514583E4}</ProjectGuid>
+    <RootNamespace>TestZolixDLL</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin</OutDir>
+    <IncludePath>..\..\ZolixCCDSrc;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\common;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>TestZolixDlld</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin</OutDir>
+    <IncludePath>..\..\ZolixCCDSrc;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\common;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>TestZolixDlld</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\ZolixCCDSrc;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\common;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt;C:\Program Files (x86)\Windows Kits\8.1\Include\um;C:\Program Files (x86)\Windows Kits\8.1\Include\shared;C:\Program Files (x86)\Windows Kits\8.1\Include\winrt;C:\Program Files (x86)\Windows Kits\8.1\include;C:\Program Files (x86)\Windows Kits\8.1\\include</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10586.0\ucrt\x86;C:\Program Files (x86)\Windows Kits\10\Lib\10.0.10586.0\um\x86;..\..\ZolixCCDSrc\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <OutDir>..\..\bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\ZolixCCDSrc;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\common;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <OutDir>..\..\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ZolixCCDd.lib</AdditionalDependencies>
+      <OutputFile>..\..\bin\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>copy ..\..\ZolixCCDSrc\dll\*.dll ..\..\bin</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ZolixCCDd.lib</AdditionalDependencies>
+      <OutputFile>..\..\bin\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>copy ..\..\ZolixCCDSrc\dll\*.dll ..\..\bin</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ZolixCCD.lib;Gdi32.lib</AdditionalDependencies>
+      <OutputFile>..\..\bin\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>copy ..\..\ZolixCCDSrc\dll\*.dll ..\..\bin</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ZolixCCD.lib</AdditionalDependencies>
+      <OutputFile>..\..\bin\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PreBuildEvent>
+      <Command>copy ..\..\ZolixCCDSrc\dll\*.dll ..\..\bin</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\TestZolixDLL.ico" />
+    <None Include="res\TestZolixDLL.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file\TeeChart2011\adxfunction.h" />
+    <ClInclude Include="file\TeeChart2011\alligatorfunction.h" />
+    <ClInclude Include="file\TeeChart2011\amountfilter.h" />
+    <ClInclude Include="file\TeeChart2011\animationlist.h" />
+    <ClInclude Include="file\TeeChart2011\annotationcallout.h" />
+    <ClInclude Include="file\TeeChart2011\annotationtool.h" />
+    <ClInclude Include="file\TeeChart2011\antialiastool.h" />
+    <ClInclude Include="file\TeeChart2011\areaseries.h" />
+    <ClInclude Include="file\TeeChart2011\arrowseries.h" />
+    <ClInclude Include="file\TeeChart2011\aspect.h" />
+    <ClInclude Include="file\TeeChart2011\averagefunction.h" />
+    <ClInclude Include="file\TeeChart2011\axes.h" />
+    <ClInclude Include="file\TeeChart2011\axis.h" />
+    <ClInclude Include="file\TeeChart2011\axisarrowtool.h" />
+    <ClInclude Include="file\TeeChart2011\axisbreak.h" />
+    <ClInclude Include="file\TeeChart2011\axisbreaks.h" />
+    <ClInclude Include="file\TeeChart2011\axisbreakstool.h" />
+    <ClInclude Include="file\TeeChart2011\axisgridpen.h" />
+    <ClInclude Include="file\TeeChart2011\axislabels.h" />
+    <ClInclude Include="file\TeeChart2011\axislabelsitem.h" />
+    <ClInclude Include="file\TeeChart2011\axisscrolltool.h" />
+    <ClInclude Include="file\TeeChart2011\axistitle.h" />
+    <ClInclude Include="file\TeeChart2011\backimage.h" />
+    <ClInclude Include="file\TeeChart2011\bannertool.h" />
+    <ClInclude Include="file\TeeChart2011\bar3dseries.h" />
+    <ClInclude Include="file\TeeChart2011\barjoinseries.h" />
+    <ClInclude Include="file\TeeChart2011\barseries.h" />
+    <ClInclude Include="file\TeeChart2011\bevelfilter.h" />
+    <ClInclude Include="file\TeeChart2011\bezierseries.h" />
+    <ClInclude Include="file\TeeChart2011\blurfilter.h" />
+    <ClInclude Include="file\TeeChart2011\bmpexport.h" />
+    <ClInclude Include="file\TeeChart2011\bollingerfunction.h" />
+    <ClInclude Include="file\TeeChart2011\boxplotseries.h" />
+    <ClInclude Include="file\TeeChart2011\brightnessfilter.h" />
+    <ClInclude Include="file\TeeChart2011\brush.h" />
+    <ClInclude Include="file\TeeChart2011\bubble3dseries.h" />
+    <ClInclude Include="file\TeeChart2011\bubbleseries.h" />
+    <ClInclude Include="file\TeeChart2011\calendarcell.h" />
+    <ClInclude Include="file\TeeChart2011\calendarcellupper.h" />
+    <ClInclude Include="file\TeeChart2011\calendarseries.h" />
+    <ClInclude Include="file\TeeChart2011\candleseries.h" />
+    <ClInclude Include="file\TeeChart2011\canvas.h" />
+    <ClInclude Include="file\TeeChart2011\ccifunction.h" />
+    <ClInclude Include="file\TeeChart2011\chartanimations.h" />
+    <ClInclude Include="file\TeeChart2011\chartaxispen.h" />
+    <ClInclude Include="file\TeeChart2011\chartcollection.h" />
+    <ClInclude Include="file\TeeChart2011\charteditorpanel.h" />
+    <ClInclude Include="file\TeeChart2011\chartfont.h" />
+    <ClInclude Include="file\TeeChart2011\chartgrid.h" />
+    <ClInclude Include="file\TeeChart2011\chartgridcols.h" />
+    <ClInclude Include="file\TeeChart2011\chartgridnavigator.h" />
+    <ClInclude Include="file\TeeChart2011\chartgridrows.h" />
+    <ClInclude Include="file\TeeChart2011\charthiddenpen.h" />
+    <ClInclude Include="file\TeeChart2011\chartimagetool.h" />
+    <ClInclude Include="file\TeeChart2011\chartpagenavigator.h" />
+    <ClInclude Include="file\TeeChart2011\circlelabels.h" />
+    <ClInclude Include="file\TeeChart2011\circularframe.h" />
+    <ClInclude Include="file\TeeChart2011\circulargauge.h" />
+    <ClInclude Include="file\TeeChart2011\clipseriestool.h" />
+    <ClInclude Include="file\TeeChart2011\clockseries.h" />
+    <ClInclude Include="file\TeeChart2011\clvfunction.h" />
+    <ClInclude Include="file\TeeChart2011\colorbandtool.h" />
+    <ClInclude Include="file\TeeChart2011\colorfilter.h" />
+    <ClInclude Include="file\TeeChart2011\colorgridseries.h" />
+    <ClInclude Include="file\TeeChart2011\colorlinetool.h" />
+    <ClInclude Include="file\TeeChart2011\compressfunction.h" />
+    <ClInclude Include="file\TeeChart2011\contourlevel.h" />
+    <ClInclude Include="file\TeeChart2011\contourlevels.h" />
+    <ClInclude Include="file\TeeChart2011\contourmarks.h" />
+    <ClInclude Include="file\TeeChart2011\contourseries.h" />
+    <ClInclude Include="file\TeeChart2011\contrastfilter.h" />
+    <ClInclude Include="file\TeeChart2011\cropfilter.h" />
+    <ClInclude Include="file\TeeChart2011\crosstabsource.h" />
+    <ClInclude Include="file\TeeChart2011\cursortool.h" />
+    <ClInclude Include="file\TeeChart2011\curvefittingfunction.h" />
+    <ClInclude Include="file\TeeChart2011\custom3dpaletteseries.h" />
+    <ClInclude Include="file\TeeChart2011\customfunction.h" />
+    <ClInclude Include="file\TeeChart2011\customserieslist.h" />
+    <ClInclude Include="file\TeeChart2011\darvasseries.h" />
+    <ClInclude Include="file\TeeChart2011\datatabletool.h" />
+    <ClInclude Include="file\TeeChart2011\deltapointseries.h" />
+    <ClInclude Include="file\TeeChart2011\donutseries.h" />
+    <ClInclude Include="file\TeeChart2011\downsamplingfunction.h" />
+    <ClInclude Include="file\TeeChart2011\dragmarkstool.h" />
+    <ClInclude Include="file\TeeChart2011\dragpointtool.h" />
+    <ClInclude Include="file\TeeChart2011\drawline.h" />
+    <ClInclude Include="file\TeeChart2011\drawlinelist.h" />
+    <ClInclude Include="file\TeeChart2011\drawlinetool.h" />
+    <ClInclude Include="file\TeeChart2011\embossfilter.h" />
+    <ClInclude Include="file\TeeChart2011\environment.h" />
+    <ClInclude Include="file\TeeChart2011\epsexport.h" />
+    <ClInclude Include="file\TeeChart2011\errorbarseries.h" />
+    <ClInclude Include="file\TeeChart2011\errorseries.h" />
+    <ClInclude Include="file\TeeChart2011\expandanimation.h" />
+    <ClInclude Include="file\TeeChart2011\expavgfunction.h" />
+    <ClInclude Include="file\TeeChart2011\explodedslices.h" />
+    <ClInclude Include="file\TeeChart2011\expmovavgfunction.h" />
+    <ClInclude Include="file\TeeChart2011\export.h" />
+    <ClInclude Include="file\TeeChart2011\extralegendtool.h" />
+    <ClInclude Include="file\TeeChart2011\fadertool.h" />
+    <ClInclude Include="file\TeeChart2011\fastlineseries.h" />
+    <ClInclude Include="file\TeeChart2011\fibonacciitem.h" />
+    <ClInclude Include="file\TeeChart2011\fibonaccilevels.h" />
+    <ClInclude Include="file\TeeChart2011\fibonaccitool.h" />
+    <ClInclude Include="file\TeeChart2011\filteritems.h" />
+    <ClInclude Include="file\TeeChart2011\filterregion.h" />
+    <ClInclude Include="file\TeeChart2011\flexexport.h" />
+    <ClInclude Include="file\TeeChart2011\floatxyz.h" />
+    <ClInclude Include="file\TeeChart2011\framebrush.h" />
+    <ClInclude Include="file\TeeChart2011\framedborder.h" />
+    <ClInclude Include="file\TeeChart2011\frametool.h" />
+    <ClInclude Include="file\TeeChart2011\fullscreentool.h" />
+    <ClInclude Include="file\TeeChart2011\funnelseries.h" />
+    <ClInclude Include="file\TeeChart2011\gammacorrectionfilter.h" />
+    <ClInclude Include="file\TeeChart2011\ganttseries.h" />
+    <ClInclude Include="file\TeeChart2011\gantttool.h" />
+    <ClInclude Include="file\TeeChart2011\gaugehand.h" />
+    <ClInclude Include="file\TeeChart2011\gaugepointerrange.h" />
+    <ClInclude Include="file\TeeChart2011\gaugeseries.h" />
+    <ClInclude Include="file\TeeChart2011\gaugeseriespointer.h" />
+    <ClInclude Include="file\TeeChart2011\gifexport.h" />
+    <ClInclude Include="file\TeeChart2011\gllightsource.h" />
+    <ClInclude Include="file\TeeChart2011\glposition.h" />
+    <ClInclude Include="file\TeeChart2011\gradient.h" />
+    <ClInclude Include="file\TeeChart2011\grayscalefilter.h" />
+    <ClInclude Include="file\TeeChart2011\gridbandbrush.h" />
+    <ClInclude Include="file\TeeChart2011\gridbandtool.h" />
+    <ClInclude Include="file\TeeChart2011\gridtransposetool.h" />
+    <ClInclude Include="file\TeeChart2011\highlowlineseries.h" />
+    <ClInclude Include="file\TeeChart2011\highlowseries.h" />
+    <ClInclude Include="file\TeeChart2011\histogramfunction.h" />
+    <ClInclude Include="file\TeeChart2011\histogramseries.h" />
+    <ClInclude Include="file\TeeChart2011\horizareaseries.h" />
+    <ClInclude Include="file\TeeChart2011\horizbarseries.h" />
+    <ClInclude Include="file\TeeChart2011\horizboxplotseries.h" />
+    <ClInclude Include="file\TeeChart2011\horizhistogramseries.h" />
+    <ClInclude Include="file\TeeChart2011\horizlineseries.h" />
+    <ClInclude Include="file\TeeChart2011\htmlexport.h" />
+    <ClInclude Include="file\TeeChart2011\huelumsatfilter.h" />
+    <ClInclude Include="file\TeeChart2011\imagebarseries.h" />
+    <ClInclude Include="file\TeeChart2011\imagepointseries.h" />
+    <ClInclude Include="file\TeeChart2011\import.h" />
+    <ClInclude Include="file\TeeChart2011\isosurfaceseries.h" />
+    <ClInclude Include="file\TeeChart2011\jpegexport.h" />
+    <ClInclude Include="file\TeeChart2011\kagiseries.h" />
+    <ClInclude Include="file\TeeChart2011\knobgauge.h" />
+    <ClInclude Include="file\TeeChart2011\legend.h" />
+    <ClInclude Include="file\TeeChart2011\legenditem.h" />
+    <ClInclude Include="file\TeeChart2011\legenditems.h" />
+    <ClInclude Include="file\TeeChart2011\legendpalettetool.h" />
+    <ClInclude Include="file\TeeChart2011\legendscrollbartool.h" />
+    <ClInclude Include="file\TeeChart2011\legendsymbol.h" />
+    <ClInclude Include="file\TeeChart2011\legendtitle.h" />
+    <ClInclude Include="file\TeeChart2011\levelsegment.h" />
+    <ClInclude Include="file\TeeChart2011\lightfilter.h" />
+    <ClInclude Include="file\TeeChart2011\lighttool.h" />
+    <ClInclude Include="file\TeeChart2011\lineargauge.h" />
+    <ClInclude Include="file\TeeChart2011\linepointseries.h" />
+    <ClInclude Include="file\TeeChart2011\lineseries.h" />
+    <ClInclude Include="file\TeeChart2011\linktool.h" />
+    <ClInclude Include="file\TeeChart2011\macdfunction.h" />
+    <ClInclude Include="file\TeeChart2011\magnifytool.h" />
+    <ClInclude Include="file\TeeChart2011\mappolygon.h" />
+    <ClInclude Include="file\TeeChart2011\mappolygonlist.h" />
+    <ClInclude Include="file\TeeChart2011\mapseries.h" />
+    <ClInclude Include="file\TeeChart2011\margins.h" />
+    <ClInclude Include="file\TeeChart2011\marks.h" />
+    <ClInclude Include="file\TeeChart2011\markscallout.h" />
+    <ClInclude Include="file\TeeChart2011\marksitem.h" />
+    <ClInclude Include="file\TeeChart2011\markssymbol.h" />
+    <ClInclude Include="file\TeeChart2011\markstiptool.h" />
+    <ClInclude Include="file\TeeChart2011\medianfunction.h" />
+    <ClInclude Include="file\TeeChart2011\metafileexport.h" />
+    <ClInclude Include="file\TeeChart2011\mirrorfilter.h" />
+    <ClInclude Include="file\TeeChart2011\modefunction.h" />
+    <ClInclude Include="file\TeeChart2011\moneyflowfunction.h" />
+    <ClInclude Include="file\TeeChart2011\mosaicfilter.h" />
+    <ClInclude Include="file\TeeChart2011\movingavgfunction.h" />
+    <ClInclude Include="file\TeeChart2011\nativeexport.h" />
+    <ClInclude Include="file\TeeChart2011\nearesttool.h" />
+    <ClInclude Include="file\TeeChart2011\numericgauge.h" />
+    <ClInclude Include="file\TeeChart2011\numericmarker.h" />
+    <ClInclude Include="file\TeeChart2011\obvfunction.h" />
+    <ClInclude Include="file\TeeChart2011\orgitem.h" />
+    <ClInclude Include="file\TeeChart2011\orgitemcollection.h" />
+    <ClInclude Include="file\TeeChart2011\orgseries.h" />
+    <ClInclude Include="file\TeeChart2011\orgshape.h" />
+    <ClInclude Include="file\TeeChart2011\page.h" />
+    <ClInclude Include="file\TeeChart2011\pagecontrol.h" />
+    <ClInclude Include="file\TeeChart2011\pagenumtool.h" />
+    <ClInclude Include="file\TeeChart2011\panel.h" />
+    <ClInclude Include="file\TeeChart2011\pcxexport.h" />
+    <ClInclude Include="file\TeeChart2011\pdfexport.h" />
+    <ClInclude Include="file\TeeChart2011\pen.h" />
+    <ClInclude Include="file\TeeChart2011\performancefunction.h" />
+    <ClInclude Include="file\TeeChart2011\piemarks.h" />
+    <ClInclude Include="file\TeeChart2011\pieotherslice.h" />
+    <ClInclude Include="file\TeeChart2011\pieseries.h" />
+    <ClInclude Include="file\TeeChart2011\pietool.h" />
+    <ClInclude Include="file\TeeChart2011\pngexport.h" />
+    <ClInclude Include="file\TeeChart2011\point3dseries.h" />
+    <ClInclude Include="file\TeeChart2011\pointarray.h" />
+    <ClInclude Include="file\TeeChart2011\pointer.h" />
+    <ClInclude Include="file\TeeChart2011\pointfigureseries.h" />
+    <ClInclude Include="file\TeeChart2011\pointseries.h" />
+    <ClInclude Include="file\TeeChart2011\polarbarseries.h" />
+    <ClInclude Include="file\TeeChart2011\polargridseries.h" />
+    <ClInclude Include="file\TeeChart2011\polarseries.h" />
+    <ClInclude Include="file\TeeChart2011\printer.h" />
+    <ClInclude Include="file\TeeChart2011\printersettings.h" />
+    <ClInclude Include="file\TeeChart2011\pvofunction.h" />
+    <ClInclude Include="file\TeeChart2011\pyramidseries.h" />
+    <ClInclude Include="file\TeeChart2011\radarseries.h" />
+    <ClInclude Include="file\TeeChart2011\rectangletool.h" />
+    <ClInclude Include="file\TeeChart2011\renkoseries.h" />
+    <ClInclude Include="file\TeeChart2011\resizefilter.h" />
+    <ClInclude Include="file\TeeChart2011\rmsfunction.h" />
+    <ClInclude Include="file\TeeChart2011\roseseries.h" />
+    <ClInclude Include="file\TeeChart2011\rotatefilter.h" />
+    <ClInclude Include="file\TeeChart2011\rotatetool.h" />
+    <ClInclude Include="file\TeeChart2011\rsifunction.h" />
+    <ClInclude Include="file\TeeChart2011\rvifunction.h" />
+    <ClInclude Include="file\TeeChart2011\sarfunction.h" />
+    <ClInclude Include="file\TeeChart2011\scroll.h" />
+    <ClInclude Include="file\TeeChart2011\scrollbarthumb.h" />
+    <ClInclude Include="file\TeeChart2011\selectortool.h" />
+    <ClInclude Include="file\TeeChart2011\series.h" />
+    <ClInclude Include="file\TeeChart2011\seriesanimationtool.h" />
+    <ClInclude Include="file\TeeChart2011\seriesbandtool.h" />
+    <ClInclude Include="file\TeeChart2011\seriesgroup.h" />
+    <ClInclude Include="file\TeeChart2011\seriesgroups.h" />
+    <ClInclude Include="file\TeeChart2011\serieslist.h" />
+    <ClInclude Include="file\TeeChart2011\seriesmarkposition.h" />
+    <ClInclude Include="file\TeeChart2011\seriesmarkspositions.h" />
+    <ClInclude Include="file\TeeChart2011\seriesregiontool.h" />
+    <ClInclude Include="file\TeeChart2011\seriesstatstool.h" />
+    <ClInclude Include="file\TeeChart2011\seriestextfield.h" />
+    <ClInclude Include="file\TeeChart2011\seriestextfields.h" />
+    <ClInclude Include="file\TeeChart2011\seriestextsource.h" />
+    <ClInclude Include="file\TeeChart2011\seriesxmlsource.h" />
+    <ClInclude Include="file\TeeChart2011\shapeseries.h" />
+    <ClInclude Include="file\TeeChart2011\sharpenfilter.h" />
+    <ClInclude Include="file\TeeChart2011\skewnessfunction.h" />
+    <ClInclude Include="file\TeeChart2011\smithseries.h" />
+    <ClInclude Include="file\TeeChart2011\smoothingfunction.h" />
+    <ClInclude Include="file\TeeChart2011\smoothpoints.h" />
+    <ClInclude Include="file\TeeChart2011\softenfilter.h" />
+    <ClInclude Include="file\TeeChart2011\spacing.h" />
+    <ClInclude Include="file\TeeChart2011\StdAfx.h" />
+    <ClInclude Include="file\TeeChart2011\stddeviationfunction.h" />
+    <ClInclude Include="file\TeeChart2011\strings.h" />
+    <ClInclude Include="file\TeeChart2011\subchart.h" />
+    <ClInclude Include="file\TeeChart2011\subchartchart.h" />
+    <ClInclude Include="file\TeeChart2011\subcharttool.h" />
+    <ClInclude Include="file\TeeChart2011\subgradient.h" />
+    <ClInclude Include="file\TeeChart2011\subsetteefunction.h" />
+    <ClInclude Include="file\TeeChart2011\surfacenearesttool.h" />
+    <ClInclude Include="file\TeeChart2011\surfaceseries.h" />
+    <ClInclude Include="file\TeeChart2011\surfacesides.h" />
+    <ClInclude Include="file\TeeChart2011\svgexport.h" />
+    <ClInclude Include="file\TeeChart2011\tablelegend.h" />
+    <ClInclude Include="file\TeeChart2011\tagcloudseries.h" />
+    <ClInclude Include="file\TeeChart2011\tchart.h" />
+    <ClInclude Include="file\TeeChart2011\TeeChartDefines.h" />
+    <ClInclude Include="file\TeeChart2011\teecommander.h" />
+    <ClInclude Include="file\TeeChart2011\teecommanderbutton.h" />
+    <ClInclude Include="file\TeeChart2011\teecustomshape.h" />
+    <ClInclude Include="file\TeeChart2011\teeeditor.h" />
+    <ClInclude Include="file\TeeChart2011\teeeditoroptions.h" />
+    <ClInclude Include="file\TeeChart2011\teeeditorshowpages.h" />
+    <ClInclude Include="file\TeeChart2011\teeemboss.h" />
+    <ClInclude Include="file\TeeChart2011\teefilter.h" />
+    <ClInclude Include="file\TeeChart2011\teefont.h" />
+    <ClInclude Include="file\TeeChart2011\teefunction.h" />
+    <ClInclude Include="file\TeeChart2011\teegdiplus.h" />
+    <ClInclude Include="file\TeeChart2011\teelistbox.h" />
+    <ClInclude Include="file\TeeChart2011\teelistboxsection.h" />
+    <ClInclude Include="file\TeeChart2011\teeopengl.h" />
+    <ClInclude Include="file\TeeChart2011\teepanelslist.h" />
+    <ClInclude Include="file\TeeChart2011\teepanning.h" />
+    <ClInclude Include="file\TeeChart2011\teepicture.h" />
+    <ClInclude Include="file\TeeChart2011\teepoint2d.h" />
+    <ClInclude Include="file\TeeChart2011\teepoint3d.h" />
+    <ClInclude Include="file\TeeChart2011\teepreviewer.h" />
+    <ClInclude Include="file\TeeChart2011\teeprevieweroptions.h" />
+    <ClInclude Include="file\TeeChart2011\teepreviewpanel.h" />
+    <ClInclude Include="file\TeeChart2011\teerect.h" />
+    <ClInclude Include="file\TeeChart2011\teeshadow.h" />
+    <ClInclude Include="file\TeeChart2011\teeshape.h" />
+    <ClInclude Include="file\TeeChart2011\teeshapepanel.h" />
+    <ClInclude Include="file\TeeChart2011\ternaryseries.h" />
+    <ClInclude Include="file\TeeChart2011\text3dtool.h" />
+    <ClInclude Include="file\TeeChart2011\textexport.h" />
+    <ClInclude Include="file\TeeChart2011\textshape.h" />
+    <ClInclude Include="file\TeeChart2011\tilefilter.h" />
+    <ClInclude Include="file\TeeChart2011\titles.h" />
+    <ClInclude Include="file\TeeChart2011\toollist.h" />
+    <ClInclude Include="file\TeeChart2011\tools.h" />
+    <ClInclude Include="file\TeeChart2011\towerseries.h" />
+    <ClInclude Include="file\TeeChart2011\transposeseriestool.h" />
+    <ClInclude Include="file\TeeChart2011\treemapseries.h" />
+    <ClInclude Include="file\TeeChart2011\trendfunction.h" />
+    <ClInclude Include="file\TeeChart2011\trisurfaceseries.h" />
+    <ClInclude Include="file\TeeChart2011\valuelist.h" />
+    <ClInclude Include="file\TeeChart2011\valuelists.h" />
+    <ClInclude Include="file\TeeChart2011\vector3dseries.h" />
+    <ClInclude Include="file\TeeChart2011\videoplayertool.h" />
+    <ClInclude Include="file\TeeChart2011\videotool.h" />
+    <ClInclude Include="file\TeeChart2011\volumepipeseries.h" />
+    <ClInclude Include="file\TeeChart2011\volumeseries.h" />
+    <ClInclude Include="file\TeeChart2011\wall.h" />
+    <ClInclude Include="file\TeeChart2011\walls.h" />
+    <ClInclude Include="file\TeeChart2011\waterfallseries.h" />
+    <ClInclude Include="file\TeeChart2011\windroseseries.h" />
+    <ClInclude Include="file\TeeChart2011\worldseries.h" />
+    <ClInclude Include="file\TeeChart2011\xamlexport.h" />
+    <ClInclude Include="file\TeeChart2011\xlsexport.h" />
+    <ClInclude Include="file\TeeChart2011\xmlexport.h" />
+    <ClInclude Include="file\TeeChart2011\zoom.h" />
+    <ClInclude Include="file\TeeChart2011\zoomfilter.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TestZolixDLL.h" />
+    <ClInclude Include="TestZolixDLLDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file\TeeChart2011\adxfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\alligatorfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\amountfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\animationlist.cpp" />
+    <ClCompile Include="file\TeeChart2011\annotationcallout.cpp" />
+    <ClCompile Include="file\TeeChart2011\annotationtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\antialiastool.cpp" />
+    <ClCompile Include="file\TeeChart2011\areaseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\arrowseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\aspect.cpp" />
+    <ClCompile Include="file\TeeChart2011\averagefunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\axes.cpp" />
+    <ClCompile Include="file\TeeChart2011\axis.cpp" />
+    <ClCompile Include="file\TeeChart2011\axisarrowtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\axisbreak.cpp" />
+    <ClCompile Include="file\TeeChart2011\axisbreaks.cpp" />
+    <ClCompile Include="file\TeeChart2011\axisbreakstool.cpp" />
+    <ClCompile Include="file\TeeChart2011\axisgridpen.cpp" />
+    <ClCompile Include="file\TeeChart2011\axislabels.cpp" />
+    <ClCompile Include="file\TeeChart2011\axislabelsitem.cpp" />
+    <ClCompile Include="file\TeeChart2011\axisscrolltool.cpp" />
+    <ClCompile Include="file\TeeChart2011\axistitle.cpp" />
+    <ClCompile Include="file\TeeChart2011\backimage.cpp" />
+    <ClCompile Include="file\TeeChart2011\bannertool.cpp" />
+    <ClCompile Include="file\TeeChart2011\bar3dseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\barjoinseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\barseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\bevelfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\bezierseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\blurfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\bmpexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\bollingerfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\boxplotseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\brightnessfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\brush.cpp" />
+    <ClCompile Include="file\TeeChart2011\bubble3dseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\bubbleseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\calendarcell.cpp" />
+    <ClCompile Include="file\TeeChart2011\calendarcellupper.cpp" />
+    <ClCompile Include="file\TeeChart2011\calendarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\candleseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\canvas.cpp" />
+    <ClCompile Include="file\TeeChart2011\ccifunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartanimations.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartaxispen.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartcollection.cpp" />
+    <ClCompile Include="file\TeeChart2011\charteditorpanel.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartfont.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartgrid.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartgridcols.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartgridnavigator.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartgridrows.cpp" />
+    <ClCompile Include="file\TeeChart2011\charthiddenpen.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartimagetool.cpp" />
+    <ClCompile Include="file\TeeChart2011\chartpagenavigator.cpp" />
+    <ClCompile Include="file\TeeChart2011\circlelabels.cpp" />
+    <ClCompile Include="file\TeeChart2011\circularframe.cpp" />
+    <ClCompile Include="file\TeeChart2011\circulargauge.cpp" />
+    <ClCompile Include="file\TeeChart2011\clipseriestool.cpp" />
+    <ClCompile Include="file\TeeChart2011\clockseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\clvfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\colorbandtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\colorfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\colorgridseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\colorlinetool.cpp" />
+    <ClCompile Include="file\TeeChart2011\compressfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\contourlevel.cpp" />
+    <ClCompile Include="file\TeeChart2011\contourlevels.cpp" />
+    <ClCompile Include="file\TeeChart2011\contourmarks.cpp" />
+    <ClCompile Include="file\TeeChart2011\contourseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\contrastfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\cropfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\crosstabsource.cpp" />
+    <ClCompile Include="file\TeeChart2011\cursortool.cpp" />
+    <ClCompile Include="file\TeeChart2011\curvefittingfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\custom3dpaletteseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\customfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\customserieslist.cpp" />
+    <ClCompile Include="file\TeeChart2011\darvasseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\datatabletool.cpp" />
+    <ClCompile Include="file\TeeChart2011\deltapointseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\donutseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\downsamplingfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\dragmarkstool.cpp" />
+    <ClCompile Include="file\TeeChart2011\dragpointtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\drawline.cpp" />
+    <ClCompile Include="file\TeeChart2011\drawlinelist.cpp" />
+    <ClCompile Include="file\TeeChart2011\drawlinetool.cpp" />
+    <ClCompile Include="file\TeeChart2011\embossfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\environment.cpp" />
+    <ClCompile Include="file\TeeChart2011\epsexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\errorbarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\errorseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\expandanimation.cpp" />
+    <ClCompile Include="file\TeeChart2011\expavgfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\explodedslices.cpp" />
+    <ClCompile Include="file\TeeChart2011\expmovavgfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\export.cpp" />
+    <ClCompile Include="file\TeeChart2011\extralegendtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\fadertool.cpp" />
+    <ClCompile Include="file\TeeChart2011\fastlineseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\fibonacciitem.cpp" />
+    <ClCompile Include="file\TeeChart2011\fibonaccilevels.cpp" />
+    <ClCompile Include="file\TeeChart2011\fibonaccitool.cpp" />
+    <ClCompile Include="file\TeeChart2011\filteritems.cpp" />
+    <ClCompile Include="file\TeeChart2011\filterregion.cpp" />
+    <ClCompile Include="file\TeeChart2011\flexexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\floatxyz.cpp" />
+    <ClCompile Include="file\TeeChart2011\framebrush.cpp" />
+    <ClCompile Include="file\TeeChart2011\framedborder.cpp" />
+    <ClCompile Include="file\TeeChart2011\frametool.cpp" />
+    <ClCompile Include="file\TeeChart2011\fullscreentool.cpp" />
+    <ClCompile Include="file\TeeChart2011\funnelseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\gammacorrectionfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\ganttseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\gantttool.cpp" />
+    <ClCompile Include="file\TeeChart2011\gaugehand.cpp" />
+    <ClCompile Include="file\TeeChart2011\gaugepointerrange.cpp" />
+    <ClCompile Include="file\TeeChart2011\gaugeseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\gaugeseriespointer.cpp" />
+    <ClCompile Include="file\TeeChart2011\gifexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\gllightsource.cpp" />
+    <ClCompile Include="file\TeeChart2011\glposition.cpp" />
+    <ClCompile Include="file\TeeChart2011\gradient.cpp" />
+    <ClCompile Include="file\TeeChart2011\grayscalefilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\gridbandbrush.cpp" />
+    <ClCompile Include="file\TeeChart2011\gridbandtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\gridtransposetool.cpp" />
+    <ClCompile Include="file\TeeChart2011\highlowlineseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\highlowseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\histogramfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\histogramseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\horizareaseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\horizbarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\horizboxplotseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\horizhistogramseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\horizlineseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\htmlexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\huelumsatfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\imagebarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\imagepointseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\import.cpp" />
+    <ClCompile Include="file\TeeChart2011\isosurfaceseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\jpegexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\kagiseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\knobgauge.cpp" />
+    <ClCompile Include="file\TeeChart2011\legend.cpp" />
+    <ClCompile Include="file\TeeChart2011\legenditem.cpp" />
+    <ClCompile Include="file\TeeChart2011\legenditems.cpp" />
+    <ClCompile Include="file\TeeChart2011\legendpalettetool.cpp" />
+    <ClCompile Include="file\TeeChart2011\legendscrollbartool.cpp" />
+    <ClCompile Include="file\TeeChart2011\legendsymbol.cpp" />
+    <ClCompile Include="file\TeeChart2011\legendtitle.cpp" />
+    <ClCompile Include="file\TeeChart2011\levelsegment.cpp" />
+    <ClCompile Include="file\TeeChart2011\lightfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\lighttool.cpp" />
+    <ClCompile Include="file\TeeChart2011\lineargauge.cpp" />
+    <ClCompile Include="file\TeeChart2011\linepointseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\lineseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\linktool.cpp" />
+    <ClCompile Include="file\TeeChart2011\macdfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\magnifytool.cpp" />
+    <ClCompile Include="file\TeeChart2011\mappolygon.cpp" />
+    <ClCompile Include="file\TeeChart2011\mappolygonlist.cpp" />
+    <ClCompile Include="file\TeeChart2011\mapseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\margins.cpp" />
+    <ClCompile Include="file\TeeChart2011\marks.cpp" />
+    <ClCompile Include="file\TeeChart2011\markscallout.cpp" />
+    <ClCompile Include="file\TeeChart2011\marksitem.cpp" />
+    <ClCompile Include="file\TeeChart2011\markssymbol.cpp" />
+    <ClCompile Include="file\TeeChart2011\markstiptool.cpp" />
+    <ClCompile Include="file\TeeChart2011\medianfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\metafileexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\mirrorfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\modefunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\moneyflowfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\mosaicfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\movingavgfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\nativeexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\nearesttool.cpp" />
+    <ClCompile Include="file\TeeChart2011\numericgauge.cpp" />
+    <ClCompile Include="file\TeeChart2011\numericmarker.cpp" />
+    <ClCompile Include="file\TeeChart2011\obvfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\orgitem.cpp" />
+    <ClCompile Include="file\TeeChart2011\orgitemcollection.cpp" />
+    <ClCompile Include="file\TeeChart2011\orgseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\orgshape.cpp" />
+    <ClCompile Include="file\TeeChart2011\page.cpp" />
+    <ClCompile Include="file\TeeChart2011\pagecontrol.cpp" />
+    <ClCompile Include="file\TeeChart2011\pagenumtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\panel.cpp" />
+    <ClCompile Include="file\TeeChart2011\pcxexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\pdfexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\pen.cpp" />
+    <ClCompile Include="file\TeeChart2011\performancefunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\piemarks.cpp" />
+    <ClCompile Include="file\TeeChart2011\pieotherslice.cpp" />
+    <ClCompile Include="file\TeeChart2011\pieseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\pietool.cpp" />
+    <ClCompile Include="file\TeeChart2011\pngexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\point3dseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\pointarray.cpp" />
+    <ClCompile Include="file\TeeChart2011\pointer.cpp" />
+    <ClCompile Include="file\TeeChart2011\pointfigureseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\pointseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\polarbarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\polargridseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\polarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\printer.cpp" />
+    <ClCompile Include="file\TeeChart2011\printersettings.cpp" />
+    <ClCompile Include="file\TeeChart2011\pvofunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\pyramidseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\radarseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\rectangletool.cpp" />
+    <ClCompile Include="file\TeeChart2011\renkoseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\resizefilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\rmsfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\roseseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\rotatefilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\rotatetool.cpp" />
+    <ClCompile Include="file\TeeChart2011\rsifunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\rvifunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\sarfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\scroll.cpp" />
+    <ClCompile Include="file\TeeChart2011\scrollbarthumb.cpp" />
+    <ClCompile Include="file\TeeChart2011\selectortool.cpp" />
+    <ClCompile Include="file\TeeChart2011\series.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesanimationtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesbandtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesgroup.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesgroups.cpp" />
+    <ClCompile Include="file\TeeChart2011\serieslist.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesmarkposition.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesmarkspositions.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesregiontool.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesstatstool.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriestextfield.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriestextfields.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriestextsource.cpp" />
+    <ClCompile Include="file\TeeChart2011\seriesxmlsource.cpp" />
+    <ClCompile Include="file\TeeChart2011\shapeseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\sharpenfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\skewnessfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\smithseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\smoothingfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\smoothpoints.cpp" />
+    <ClCompile Include="file\TeeChart2011\softenfilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\spacing.cpp" />
+    <ClCompile Include="file\TeeChart2011\stddeviationfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\strings.cpp" />
+    <ClCompile Include="file\TeeChart2011\subchart.cpp" />
+    <ClCompile Include="file\TeeChart2011\subchartchart.cpp" />
+    <ClCompile Include="file\TeeChart2011\subcharttool.cpp" />
+    <ClCompile Include="file\TeeChart2011\subgradient.cpp" />
+    <ClCompile Include="file\TeeChart2011\subsetteefunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\surfacenearesttool.cpp" />
+    <ClCompile Include="file\TeeChart2011\surfaceseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\surfacesides.cpp" />
+    <ClCompile Include="file\TeeChart2011\svgexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\tablelegend.cpp" />
+    <ClCompile Include="file\TeeChart2011\tagcloudseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\tchart.cpp" />
+    <ClCompile Include="file\TeeChart2011\teecommander.cpp" />
+    <ClCompile Include="file\TeeChart2011\teecommanderbutton.cpp" />
+    <ClCompile Include="file\TeeChart2011\teecustomshape.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeeditor.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeeditoroptions.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeeditorshowpages.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeemboss.cpp" />
+    <ClCompile Include="file\TeeChart2011\teefilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\teefont.cpp" />
+    <ClCompile Include="file\TeeChart2011\teefunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\teegdiplus.cpp" />
+    <ClCompile Include="file\TeeChart2011\teelistbox.cpp" />
+    <ClCompile Include="file\TeeChart2011\teelistboxsection.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeopengl.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepanelslist.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepanning.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepicture.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepoint2d.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepoint3d.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepreviewer.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeprevieweroptions.cpp" />
+    <ClCompile Include="file\TeeChart2011\teepreviewpanel.cpp" />
+    <ClCompile Include="file\TeeChart2011\teerect.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeshadow.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeshape.cpp" />
+    <ClCompile Include="file\TeeChart2011\teeshapepanel.cpp" />
+    <ClCompile Include="file\TeeChart2011\ternaryseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\text3dtool.cpp" />
+    <ClCompile Include="file\TeeChart2011\textexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\textshape.cpp" />
+    <ClCompile Include="file\TeeChart2011\tilefilter.cpp" />
+    <ClCompile Include="file\TeeChart2011\titles.cpp" />
+    <ClCompile Include="file\TeeChart2011\toollist.cpp" />
+    <ClCompile Include="file\TeeChart2011\tools.cpp" />
+    <ClCompile Include="file\TeeChart2011\towerseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\transposeseriestool.cpp" />
+    <ClCompile Include="file\TeeChart2011\treemapseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\trendfunction.cpp" />
+    <ClCompile Include="file\TeeChart2011\trisurfaceseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\valuelist.cpp" />
+    <ClCompile Include="file\TeeChart2011\valuelists.cpp" />
+    <ClCompile Include="file\TeeChart2011\vector3dseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\videoplayertool.cpp" />
+    <ClCompile Include="file\TeeChart2011\videotool.cpp" />
+    <ClCompile Include="file\TeeChart2011\volumepipeseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\volumeseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\wall.cpp" />
+    <ClCompile Include="file\TeeChart2011\walls.cpp" />
+    <ClCompile Include="file\TeeChart2011\waterfallseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\windroseseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\worldseries.cpp" />
+    <ClCompile Include="file\TeeChart2011\xamlexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\xlsexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\xmlexport.cpp" />
+    <ClCompile Include="file\TeeChart2011\zoom.cpp" />
+    <ClCompile Include="file\TeeChart2011\zoomfilter.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TestZolixDLL.cpp" />
+    <ClCompile Include="TestZolixDLLDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TestZolixDLL.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="TestZolixDLL.rc" _x007B_FCB4B50A-E3F1-4174-BD18-54C3B3287258_x007D_="CTchart" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

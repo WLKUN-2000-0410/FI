@@ -1,0 +1,120 @@
+[Version]
+Signature="$CHICAGO$"
+Class=Image
+ClassGuid = {6bdd1fc6-810f-11d0-bec7-08002be2092f}
+provider=%OuMain%
+DriverVer = 01/18/2008,3.00
+LayoutFile=layout.inf
+DriverPackageType = PlugAndPlay
+
+[Manufacturer]
+%OuMain%=OuMain
+
+[OuMain]
+%USB\VID_0547&PID_4D35.DeviceDesc%=DTCM500.Dev, USB\VID_0547&PID_4D35
+
+[DestinationDirs]
+DefaultDestDir=11
+;10 is the windows directory
+;11 is the systems directory
+DTCM500.Files.Ext   = 10,System32\Drivers
+DTCM500.Files.Inf   = 10,INF
+DTCM500.Files.Sys32 = 10,System32
+DTCM500.Files.TWain_32 = 10,TWain_32
+
+[SourceDisksNames]
+1 = %DTCM500.SvcDesc%
+
+[SourceDisksFiles]
+DTCM500.sys = 1
+DTCM500.ax = 1
+DTCM500.ds = 1
+
+
+[DTCM500.Dev]
+CopyFiles=DTCM500.Files.Ext, DTCM500.Files.Inf,DTCM500.Files.TWain_32,DTCM500.Files.Sys32
+AddReg=DTCM500.AddReg
+
+[DTCM500.Dev.NT]
+; copyfiles commented out for Win2K to avoid user intervention during install
+CopyFiles=DTCM500.Files.Ext, DTCM500.Files.Inf, DTCM500.Files.TWain_32,DTCM500.Files.Sys32
+AddReg=DTCM500.AddReg
+
+[DTCM500.Dev.NT.Services]
+Addservice = DTCM500, 0x00000002, DTCM500.AddService
+
+[DTCM500.AddService]
+DisplayName    = %DTCM500.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\DTCM500.sys
+LoadOrderGroup = Base
+
+[DTCM500.Files.Ext]
+DTCM500.sys
+
+[DTCM500.Files.Inf]
+DTCM500.Inf
+
+[DTCM500.Files.Sys32]
+DTCM500.ax
+
+[DTCM500.Files.TWain_32]
+DTCM500.ds
+
+[DTCM500.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,DTCM500.sys
+
+HKR,,CLSID,,%DTCM500.CAMERAGUID%
+HKR,,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+
+;CAMERAGUID
+HKCR,CLSID\%DTCM500.CAMERAGUID%,,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,CLSID\%DTCM500.CAMERAGUID%\InprocServer32,,,DTCM500.ax
+HKCR,CLSID\%DTCM500.CAMERAGUID%\InprocServer32,ThreadingModel,,Both
+
+;SETUPGUID
+HKCR,CLSID\%DTCM500.SETUPGUID%,,,%DTCM500.Setup%
+HKCR,CLSID\%DTCM500.SETUPGUID%\InprocServer32,,,DTCM500.ax
+HKCR,CLSID\%DTCM500.SETUPGUID%\InprocServer32,ThreadingModel,,Both
+
+;SIZEGUID
+HKCR,CLSID\%DTCM500.SIZEGUID%,,,%DTCM500.Size%"
+HKCR,CLSID\%DTCM500.SIZEGUID%\InprocServer32,,,DTCM500.ax
+HKCR,CLSID\%DTCM500.SIZEGUID%\InprocServer32,ThreadingModel,,Both
+
+;Associate the property set with the property page
+HKCR,CLSID\%DTCM500.VideoFilter%\Instance\%DTCM500.CAMERAGUID%,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,CLSID\%DTCM500.VideoFilter%\Instance\%DTCM500.CAMERAGUID%,CLSID,,%DTCM500.CAMERAGUID%
+HKCR,CLSID\%DTCM500.VideoFilter%\Instance\%DTCM500.CAMERAGUID%,FilterData,01,\
+02,00,00,00,00,00,20,00,01,00,00,00,00,00,00,00,30,70,69,33,\
+08,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,00,00,00,00,30,74,79,33,00,\
+00,00,00,38,00,00,00,48,00,00,00,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,\
+9b,71,7d,eb,36,e4,4f,52,ce,11,9f,53,00,20,af,0b,a7,70
+
+HKCR,CLSID\%DTCM500.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,FriendlyName,,%USB\VID_0547&PID_4D35.DeviceDesc%
+HKCR,CLSID\%DTCM500.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,CLSID,,%DTCM500.CAMERAGUID%
+HKCR,CLSID\%DTCM500.CaptureFilter%\Instance\%USB\VID_0547&PID_4D35.DeviceDesc%,FilterData,01,\
+02,00,00,00,00,00,20,00,01,00,00,00,00,00,00,00,30,70,69,33,\
+08,00,00,00,01,00,00,00,01,00,00,00,00,00,00,00,38,00,00,00,30,74,79,33,00,\
+00,00,00,48,00,00,00,58,00,00,00,81,42,6c,fb,53,03,d1,11,90,5f,00,00,c0,cc,\
+16,ba,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,7d,eb,36,e4,4f,52,ce,\
+11,9f,53,00,20,af,0b,a7,70
+
+[Strings]
+OuMain                         = "ShenZhen SunTime Technology Co.,Ltd."
+USB\VID_0547&PID_4D35.DeviceDesc = "SunTime 500E"
+DTCM500.SvcDesc                  = "SunTime 500E"
+
+DTCM500.VideoFilter		 = "{083863F1-70DE-11d0-BD40-00A0C911CE86}"
+DTCM500.CaptureFilter            = "{860BB310-5D01-11d0-BD3B-00A0C911CE86}"
+
+DTCM500.CAMERAGUID 	   	 = "{9E5CC773-DEEF-4b58-B1F0-C969CA06C95D}"
+DTCM500.SETUPGUID                = "{6EAD0D65-1039-40f2-850B-2293EAA91D18}"
+DTCM500.SIZEGUID                 = "{9B2CE39A-5927-47fd-8806-D4E76DD96D0F}"
+
+DTCM500.Setup    		 = "DTCM500 SetupPage"
+DTCM500.Size 	   		 = "DTCM500 SizePage"
+

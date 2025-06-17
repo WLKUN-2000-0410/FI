@@ -1,0 +1,2001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="duilib_frame">
+      <UniqueIdentifier>{008275ca-591e-4b84-8534-1d5dec2da220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TeeChart2011">
+      <UniqueIdentifier>{1d4d3dbb-2829-437f-9067-7435e8d7bff9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FI-DB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FI-DBDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWindowWnd.h">
+      <Filter>duilib_frame</Filter>
+    </ClInclude>
+    <ClInclude Include="PublicInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\adxfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\alligatorfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\amountfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\animationlist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\annotationcallout.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\annotationtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\antialiastool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\areaseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\arrowseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\aspect.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\averagefunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axes.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axis.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axisarrowtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axisbreak.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axisbreaks.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axisbreakstool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axisgridpen.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axislabels.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axislabelsitem.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axisscrolltool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\axistitle.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\backimage.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bannertool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bar3dseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\barjoinseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\barseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bevelfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bezierseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\blurfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bmpexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bollingerfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\boxplotseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\brightnessfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\brush.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bubble3dseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\bubbleseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\calendarcell.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\calendarcellupper.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\calendarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\candleseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\canvas.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\ccifunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartanimations.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartaxispen.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartcollection.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\charteditorpanel.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartfont.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartgrid.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartgridcols.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartgridnavigator.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartgridrows.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\charthiddenpen.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartimagetool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\chartpagenavigator.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\circlelabels.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\circularframe.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\circulargauge.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\clipseriestool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\clockseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\clvfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\colorbandtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\colorfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\colorgridseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\colorlinetool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\compressfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\contourlevel.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\contourlevels.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\contourmarks.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\contourseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\contrastfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\cropfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\crosstabsource.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\cursortool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\curvefittingfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\custom3dpaletteseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\customfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\customserieslist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\darvasseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\datatabletool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\deltapointseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\donutseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\downsamplingfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\dragmarkstool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\dragpointtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\drawline.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\drawlinelist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\drawlinetool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\embossfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\environment.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\epsexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\errorbarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\errorseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\expandanimation.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\expavgfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\explodedslices.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\expmovavgfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\export.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\extralegendtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\fadertool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\fastlineseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\fibonacciitem.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\fibonaccilevels.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\fibonaccitool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\filteritems.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\filterregion.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\flexexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\floatxyz.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\framebrush.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\framedborder.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\frametool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\fullscreentool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\funnelseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gammacorrectionfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\ganttseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gantttool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gaugehand.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gaugepointerrange.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gaugeseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gaugeseriespointer.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gifexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gllightsource.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\glposition.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gradient.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\grayscalefilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gridbandbrush.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gridbandtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\gridtransposetool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\highlowlineseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\highlowseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\histogramfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\histogramseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\horizareaseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\horizbarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\horizboxplotseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\horizhistogramseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\horizlineseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\htmlexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\huelumsatfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\imagebarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\imagepointseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\import.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\isosurfaceseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\jpegexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\kagiseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\knobgauge.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legend.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legenditem.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legenditems.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legendpalettetool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legendscrollbartool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legendsymbol.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\legendtitle.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\levelsegment.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\lightfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\lighttool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\lineargauge.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\linepointseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\lineseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\linktool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\macdfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\magnifytool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\mappolygon.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\mappolygonlist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\mapseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\margins.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\marks.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\markscallout.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\marksitem.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\markssymbol.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\markstiptool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\medianfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\metafileexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\mirrorfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\modefunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\moneyflowfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\mosaicfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\movingavgfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\nativeexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\nearesttool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\numericgauge.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\numericmarker.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\obvfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\orgitem.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\orgitemcollection.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\orgseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\orgshape.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\page.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pagecontrol.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pagenumtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\panel.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pcxexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pdfexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pen.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\performancefunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\piemarks.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pieotherslice.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pieseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pietool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pngexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\point3dseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pointarray.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pointer.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pointfigureseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pointseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\polarbarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\polargridseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\polarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\printer.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\printersettings.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pvofunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\pyramidseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\radarseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\rectangletool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\renkoseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\resizefilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\rmsfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\roseseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\rotatefilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\rotatetool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\rsifunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\rvifunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\sarfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\scroll.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\scrollbarthumb.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\selectortool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\series.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesanimationtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesbandtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesgroup.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesgroups.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\serieslist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesmarkposition.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesmarkspositions.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesregiontool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesstatstool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriestextfield.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriestextfields.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriestextsource.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\seriesxmlsource.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\shapeseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\sharpenfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\skewnessfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\smithseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\smoothingfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\smoothpoints.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\softenfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\spacing.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\StdAfx.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\stddeviationfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\strings.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\subchart.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\subchartchart.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\subcharttool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\subgradient.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\subsetteefunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\surfacenearesttool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\surfaceseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\surfacesides.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\svgexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\tablelegend.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\tagcloudseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\tchart.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\TeeChartDefines.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teecommander.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teecommanderbutton.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teecustomshape.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeeditor.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeeditoroptions.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeeditorshowpages.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeemboss.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teefilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teefont.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teefunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teegdiplus.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teelistbox.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teelistboxsection.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeopengl.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepanelslist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepanning.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepicture.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepoint2d.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepoint3d.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepreviewer.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeprevieweroptions.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teepreviewpanel.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teerect.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeshadow.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeshape.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\teeshapepanel.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\ternaryseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\text3dtool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\textexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\textshape.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\tilefilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\titles.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\toollist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\tools.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\towerseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\transposeseriestool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\treemapseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\trendfunction.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\trisurfaceseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\valuelist.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\valuelists.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\vector3dseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\videoplayertool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\videotool.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\volumepipeseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\volumeseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\wall.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\walls.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\waterfallseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\windroseseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\worldseries.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\xamlexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\xlsexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\xmlexport.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\zoom.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="TeeChart2011\zoomfilter.h">
+      <Filter>TeeChart2011</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareChart.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FI-DB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FI-DBDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWindowWnd.cpp">
+      <Filter>duilib_frame</Filter>
+    </ClCompile>
+    <ClCompile Include="PublicInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\adxfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\alligatorfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\amountfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\animationlist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\annotationcallout.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\annotationtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\antialiastool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\areaseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\arrowseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\aspect.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\averagefunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axes.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axis.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axisarrowtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axisbreak.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axisbreaks.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axisbreakstool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axisgridpen.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axislabels.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axislabelsitem.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axisscrolltool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\axistitle.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\backimage.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bannertool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bar3dseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\barjoinseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\barseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bevelfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bezierseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\blurfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bmpexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bollingerfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\boxplotseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\brightnessfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\brush.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bubble3dseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\bubbleseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\calendarcell.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\calendarcellupper.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\calendarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\candleseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\canvas.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\ccifunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartanimations.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartaxispen.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartcollection.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\charteditorpanel.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartfont.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartgrid.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartgridcols.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartgridnavigator.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartgridrows.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\charthiddenpen.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartimagetool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\chartpagenavigator.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\circlelabels.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\circularframe.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\circulargauge.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\clipseriestool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\clockseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\clvfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\colorbandtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\colorfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\colorgridseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\colorlinetool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\compressfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\contourlevel.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\contourlevels.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\contourmarks.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\contourseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\contrastfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\cropfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\crosstabsource.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\cursortool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\curvefittingfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\custom3dpaletteseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\customfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\customserieslist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\darvasseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\datatabletool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\deltapointseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\donutseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\downsamplingfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\dragmarkstool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\dragpointtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\drawline.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\drawlinelist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\drawlinetool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\embossfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\environment.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\epsexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\errorbarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\errorseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\expandanimation.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\expavgfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\explodedslices.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\expmovavgfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\export.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\extralegendtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\fadertool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\fastlineseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\fibonacciitem.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\fibonaccilevels.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\fibonaccitool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\filteritems.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\filterregion.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\flexexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\floatxyz.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\framebrush.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\framedborder.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\frametool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\fullscreentool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\funnelseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gammacorrectionfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\ganttseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gantttool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gaugehand.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gaugepointerrange.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gaugeseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gaugeseriespointer.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gifexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gllightsource.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\glposition.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gradient.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\grayscalefilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gridbandbrush.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gridbandtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\gridtransposetool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\highlowlineseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\highlowseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\histogramfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\histogramseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\horizareaseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\horizbarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\horizboxplotseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\horizhistogramseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\horizlineseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\htmlexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\huelumsatfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\imagebarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\imagepointseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\import.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\isosurfaceseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\jpegexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\kagiseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\knobgauge.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legend.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legenditem.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legenditems.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legendpalettetool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legendscrollbartool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legendsymbol.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\legendtitle.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\levelsegment.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\lightfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\lighttool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\lineargauge.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\linepointseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\lineseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\linktool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\macdfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\magnifytool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\mappolygon.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\mappolygonlist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\mapseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\margins.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\marks.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\markscallout.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\marksitem.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\markssymbol.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\markstiptool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\medianfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\metafileexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\mirrorfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\modefunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\moneyflowfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\mosaicfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\movingavgfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\nativeexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\nearesttool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\numericgauge.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\numericmarker.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\obvfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\orgitem.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\orgitemcollection.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\orgseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\orgshape.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\page.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pagecontrol.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pagenumtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\panel.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pcxexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pdfexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pen.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\performancefunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\piemarks.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pieotherslice.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pieseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pietool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pngexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\point3dseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pointarray.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pointer.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pointfigureseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pointseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\polarbarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\polargridseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\polarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\printer.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\printersettings.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pvofunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\pyramidseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\radarseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\rectangletool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\renkoseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\resizefilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\rmsfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\roseseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\rotatefilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\rotatetool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\rsifunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\rvifunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\sarfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\scroll.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\scrollbarthumb.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\selectortool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\series.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesanimationtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesbandtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesgroup.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesgroups.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\serieslist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesmarkposition.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesmarkspositions.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesregiontool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesstatstool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriestextfield.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriestextfields.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriestextsource.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\seriesxmlsource.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\shapeseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\sharpenfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\skewnessfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\smithseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\smoothingfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\smoothpoints.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\softenfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\spacing.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\stddeviationfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\strings.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\subchart.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\subchartchart.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\subcharttool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\subgradient.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\subsetteefunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\surfacenearesttool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\surfaceseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\surfacesides.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\svgexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\tablelegend.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\tagcloudseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\tchart.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teecommander.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teecommanderbutton.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teecustomshape.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeeditor.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeeditoroptions.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeeditorshowpages.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeemboss.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teefilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teefont.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teefunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teegdiplus.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teelistbox.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teelistboxsection.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeopengl.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepanelslist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepanning.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepicture.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepoint2d.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepoint3d.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepreviewer.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeprevieweroptions.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teepreviewpanel.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teerect.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeshadow.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeshape.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\teeshapepanel.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\ternaryseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\text3dtool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\textexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\textshape.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\tilefilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\titles.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\toollist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\tools.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\towerseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\transposeseriestool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\treemapseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\trendfunction.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\trisurfaceseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\valuelist.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\valuelists.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\vector3dseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\videoplayertool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\videotool.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\volumepipeseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\volumeseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\wall.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\walls.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\waterfallseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\windroseseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\worldseries.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\xamlexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\xlsexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\xmlexport.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\zoom.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="TeeChart2011\zoomfilter.cpp">
+      <Filter>TeeChart2011</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareChart.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FI-DB.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\FIDB.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\FI-DB.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

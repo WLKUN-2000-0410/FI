@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Itanium">
+      <Configuration>Debug</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Itanium">
+      <Configuration>Release</Configuration>
+      <Platform>Itanium</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F479B52-0CBB-43AF-92EE-DD7E1C305FCB}</ProjectGuid>
+    <RootNamespace>ZLCameraApp</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+    <ProjectName>ZolixCCD</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Itanium'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>D:\lcz_code\FI-PC\fi-pro - 副本\Debug</OutDir>
+    <IncludePath>..\..\ZolixCCDSrc\common;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\src;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>ZolixCCD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\ZolixCCDSrc\lib\</OutDir>
+    <IncludePath>..\..\ZolixCCDSrc\common;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\src;$(IncludePath);$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib;$(LibraryPath);$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <TargetName>ZolixCCD</TargetName>
+    <LibraryWPath>$(WindowsSDK_MetadataPath);</LibraryWPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\ZolixCCDSrc\lib\</OutDir>
+    <IncludePath>..\..\ZolixCCDSrc\common;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\src;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+    <TargetName>ZolixCCD</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\ZolixCCDSrc\lib_x64\</OutDir>
+    <IncludePath>..\..\ZolixCCDSrc\common;..\..\ZolixCCDSrc\include;..\..\ZolixCCDSrc\src;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath>..\..\ZolixCCDSrc\lib_x64;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(LibraryPath)</LibraryPath>
+    <TargetName>ZolixCCD_x64</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAsManaged>
+      </CompileAsManaged>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <OutputFile>D:\lcz_code\FI-PC\fi-pro - 副本\Debug\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>clcamiface3.lib;UserApplication.lib;greateyes.lib</AdditionalDependencies>
+      <ProgramDatabaseFile>ZolixCCD140.pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <OutputFile>..\..\ZolixCCDSrc\dll\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>clcamiface3.lib;UserApplication.lib;greateyes.lib;dfield.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Itanium'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <OutputFile>..\..\ZolixCCDSrc\dll\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>clcamiface.lib;UserApplication.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <OutputFile>..\..\ZolixCCDSrc\dll_x64\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>clcamiface3.lib;UserApplication.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\ZolixCCD.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ZolixCCDSrc\common\stdafx.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\A1Camera.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\AndorCamera.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\CameraDll.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\Dib.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgA1Set.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvAndor.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvGreateyes.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvMity.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvOTO.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvToucan.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAndorSet.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgGreateyesSet.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgImage.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgMitySet.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgOTOSet.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgPassword.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgToucanSet.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\GreatyeysCamera.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\Language.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\ManageZolixIni.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\MityCamera.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\OTOCamera.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\toucampro.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\toucam_zl.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\ToucanCamera.cpp" />
+    <ClCompile Include="..\..\ZolixCCDSrc\src\ZolixCCD.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ZolixCCDSrc\common\MFCResGInclude.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\common\MFCResMacros.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\common\Resource.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\common\stdafx.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\common\targetver.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\A1Camera.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\AndorCamera.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ATMCD32D.H" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\CameraDll.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\clcamdefines.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\clcamiface.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DataProcess.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\Dib.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgA1Set.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvAndor.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvGreateyes.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvMity.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvOTO.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvToucan.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAndorSet.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgGreateyesSet.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgImage.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgMitySet.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgOTOSet.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgPassword.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgToucanSet.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\FTD2XX.H" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\greateyes.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\greateyesBeta.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\GreateyesCamera.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\Language.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ManageZolixIni.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\MityCamera.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\OTOCamera.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\toucampro.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\toucam_zl.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ToucanCamera.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\UserApplication.h" />
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ZolixCCD.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZolixCCD.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

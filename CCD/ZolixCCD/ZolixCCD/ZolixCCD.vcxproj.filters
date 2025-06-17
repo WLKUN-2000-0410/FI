@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{8c19092b-0d0a-48c0-a6e1-6423dba15185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass">
+      <UniqueIdentifier>{d6e6dad3-b00f-486e-ba65-a03b19580dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass\Andor">
+      <UniqueIdentifier>{dd303500-0c07-4f04-927a-0b2748a55f1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass\Mity">
+      <UniqueIdentifier>{7c75e70b-71ab-448e-8083-747faddb8f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass\OTO">
+      <UniqueIdentifier>{f61c1a2d-4fda-4120-bb1a-86029132f9e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manage">
+      <UniqueIdentifier>{5722cc40-ee36-4a5d-b4c3-c79e86c18971}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Language">
+      <UniqueIdentifier>{6119751f-d865-48e5-9dc0-212a037b21dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass\Greateyes">
+      <UniqueIdentifier>{f5e7eb6d-5fc6-4bdf-bf79-ffe59191f66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass\Toucan">
+      <UniqueIdentifier>{017d989b-408f-4ef3-8d51-1966257971d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLClass\A1">
+      <UniqueIdentifier>{e26093b2-25ad-466c-8cd8-68063a56b1eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\ZolixCCD.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\Language.cpp">
+      <Filter>Language</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\Dib.cpp">
+      <Filter>manage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgImage.cpp">
+      <Filter>manage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\ZolixCCD.cpp">
+      <Filter>ZLClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\CameraDll.cpp">
+      <Filter>ZLClass</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvOTO.cpp">
+      <Filter>ZLClass\OTO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\OTOCamera.cpp">
+      <Filter>ZLClass\OTO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgOTOSet.cpp">
+      <Filter>ZLClass\OTO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvMity.cpp">
+      <Filter>ZLClass\Mity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\MityCamera.cpp">
+      <Filter>ZLClass\Mity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgMitySet.cpp">
+      <Filter>ZLClass\Mity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\AndorCamera.cpp">
+      <Filter>ZLClass\Andor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvAndor.cpp">
+      <Filter>ZLClass\Andor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAndorSet.cpp">
+      <Filter>ZLClass\Andor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgPassword.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\common\stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\ManageZolixIni.cpp">
+      <Filter>manage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvGreateyes.cpp">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgGreateyesSet.cpp">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\GreatyeysCamera.cpp">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\toucam_zl.cpp">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\toucampro.cpp">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\ToucanCamera.cpp">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgAdvToucan.cpp">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgToucanSet.cpp">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\A1Camera.cpp">
+      <Filter>ZLClass\A1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZolixCCDSrc\src\DlgA1Set.cpp">
+      <Filter>ZLClass\A1</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ZolixCCDSrc\common\MFCResGInclude.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\common\MFCResMacros.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\common\Resource.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\common\targetver.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgPassword.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\Language.h">
+      <Filter>Language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\Dib.h">
+      <Filter>manage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DataProcess.h">
+      <Filter>manage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgImage.h">
+      <Filter>manage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ZolixCCD.h">
+      <Filter>ZLClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\CameraDll.h">
+      <Filter>ZLClass</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvOTO.h">
+      <Filter>ZLClass\OTO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\OTOCamera.h">
+      <Filter>ZLClass\OTO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgOTOSet.h">
+      <Filter>ZLClass\OTO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\UserApplication.h">
+      <Filter>ZLClass\OTO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvMity.h">
+      <Filter>ZLClass\Mity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\clcamdefines.h">
+      <Filter>ZLClass\Mity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\clcamiface.h">
+      <Filter>ZLClass\Mity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\MityCamera.h">
+      <Filter>ZLClass\Mity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgMitySet.h">
+      <Filter>ZLClass\Mity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ATMCD32D.H">
+      <Filter>ZLClass\Andor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvAndor.h">
+      <Filter>ZLClass\Andor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAndorSet.h">
+      <Filter>ZLClass\Andor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\common\stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ManageZolixIni.h">
+      <Filter>manage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvGreateyes.h">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgGreateyesSet.h">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\greateyes.h">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\greateyesBeta.h">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\GreateyesCamera.h">
+      <Filter>ZLClass\Greateyes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\toucam_zl.h">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\toucampro.h">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\ToucanCamera.h">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\FTD2XX.H">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgAdvToucan.h">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgToucanSet.h">
+      <Filter>ZLClass\Toucan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\AndorCamera.h">
+      <Filter>ZLClass\Andor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\A1Camera.h">
+      <Filter>ZLClass\A1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZolixCCDSrc\include\DlgA1Set.h">
+      <Filter>ZLClass\A1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ZolixCCD.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
